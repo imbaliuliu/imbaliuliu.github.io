@@ -6,18 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>HTML基础 | LLLOG</title>
+  <title>HTML基础（上） | LLLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="HTML简介实例123456789&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;h1&amp;gt;我的第一个标题&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;我的第一个段落&amp;lt;p1&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;   什么是HTML？HTML是用来描述网页的一种语言  HTML指的是超文本标记语言(Hyper Text Markup Language) HTML不是一">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTML基础">
+<meta property="og:title" content="HTML基础（上）">
 <meta property="og:url" content="http://yoursite.com/2019/08/14/HTML基础/index.html">
 <meta property="og:site_name" content="LLLOG">
 <meta property="og:description" content="HTML简介实例123456789&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;h1&amp;gt;我的第一个标题&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;我的第一个段落&amp;lt;p1&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;   什么是HTML？HTML是用来描述网页的一种语言  HTML指的是超文本标记语言(Hyper Text Markup Language) HTML不是一">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-18T17:00:47.786Z">
+<meta property="og:updated_time" content="2019-08-19T10:47:42.402Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HTML基础">
+<meta name="twitter:title" content="HTML基础（上）">
 <meta name="twitter:description" content="HTML简介实例123456789&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;h1&amp;gt;我的第一个标题&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;我的第一个段落&amp;lt;p1&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;   什么是HTML？HTML是用来描述网页的一种语言  HTML指的是超文本标记语言(Hyper Text Markup Language) HTML不是一">
   
     <link rel="alternative" href="/atom.xml" title="LLLOG" type="application/atom+xml">
@@ -149,7 +149,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      HTML基础
+      HTML基础（上）
     </h1>
   
 
@@ -539,6 +539,254 @@
 <td align="left">定义一个定义项目。</td>
 </tr>
 </tbody></table>
+<hr>
+<h1 id="HTML引用"><a href="#HTML引用" class="headerlink" title="HTML引用"></a>HTML引用</h1><h2 id="HTML-lt-q-gt-用于短的引用"><a href="#HTML-lt-q-gt-用于短的引用" class="headerlink" title="HTML&lt;q&gt;用于短的引用"></a>HTML<code>&lt;q&gt;</code>用于短的引用</h2><p>浏览器通常会为<code>&lt;q&gt;</code>元素包围<strong>引号</strong>。<br><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;WWF的目标是：&lt;q&gt;构建人与自然和谐共存的世界。&lt;/q&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果：</strong><br>WWF的目标是：<q>构建人与自然和谐共存的世界。</q></p>
+<hr>
+<h2 id="用于长引用的HTML-lt-blockquote-gt"><a href="#用于长引用的HTML-lt-blockquote-gt" class="headerlink" title="用于长引用的HTML&lt;blockquote&gt;"></a>用于长引用的HTML<code>&lt;blockquote&gt;</code></h2><p>浏览器通常会对<code>&lt;blockquote&gt;</code>元素进行<strong>缩进</strong>处理。<br><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;以下内容引用自 WWF 的网站：&lt;/p&gt;</span><br><span class="line">&lt;blockquote cite=&quot;http://www.worldwildlife.org/who/index.html&quot;&gt;</span><br><span class="line">五十年来，WWF 一直致力于保护自然界的未来。</span><br><span class="line">世界领先的环保组织，WWF 工作于 100 个国家，</span><br><span class="line">并得到美国一百二十万会员及全球近五百万会员的支持。</span><br><span class="line">&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果：</strong></p>
+<p>以下内容引用自 WWF 的网站：</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+五十年来，WWF 一直致力于保护自然界的未来。
+世界领先的环保组织，WWF 工作于 100 个国家，
+并得到美国一百二十万会员及全球近五百万会员的支持。
+</blockquote>
+
+<hr>
+<h2 id="用于缩略词的HTML-lt-abbr-gt"><a href="#用于缩略词的HTML-lt-abbr-gt" class="headerlink" title="用于缩略词的HTML&lt;abbr&gt;"></a>用于缩略词的HTML<code>&lt;abbr&gt;</code></h2><p>HTML<code>&lt;abbr&gt;</code>元素定义<strong>缩写</strong>或首字母缩略语。<br>对缩写进行标记能够为浏览器、翻译系统以及搜索引擎提供有用的信息。<br><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;abbr title=&quot;World Health Organization&quot;&gt;WHO&lt;/abbr&gt;成立于 1948 年。&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="用于定义的HTML-lt-dfn-gt"><a href="#用于定义的HTML-lt-dfn-gt" class="headerlink" title="用于定义的HTML&lt;dfn&gt;"></a>用于定义的HTML<code>&lt;dfn&gt;</code></h2><p>HTML <code>&lt;dfn&gt;</code>元素定义项目或缩写的<strong>定义</strong>。<br><strong>用法：</strong><br>1.如果设置了<code>&lt;dfn&gt;</code>元素的title属性，则定义项目：<br><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;dfn title=&quot;World Health Organization&quot;&gt;WHO&lt;/dfn&gt; 成立于 1948 年。&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p>2.如果<code>&lt;dfn&gt;</code>元素包含具有标题的<code>&lt;abbr&gt;</code>元素，则title定义项目：<br><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;dfn&gt;&lt;abbr title=&quot;World Health Organization&quot;&gt;WHO&lt;/abbr&gt;&lt;/dfn&gt; 成立于 1948 年。&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p>3.否则，<code>&lt;dfn&gt;</code>文本内容即是项目，并且父元素包含定义。<br><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;dfn&gt;WHO&lt;/dfn&gt; World Health Organization 成立于 1948 年。&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="用于联系信息的HTML-lt-address-gt"><a href="#用于联系信息的HTML-lt-address-gt" class="headerlink" title="用于联系信息的HTML&lt;address&gt;"></a>用于联系信息的HTML<code>&lt;address&gt;</code></h2><p>HTML<code>&lt;address&gt;</code>元素定义文档或文章的联系信息（作者/拥有者）。<br>此元素通常以<strong>斜体</strong>显示。大多数浏览器会在此元素前后添加折行。<br><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">为了体现折行</span><br><span class="line">&lt;address&gt;</span><br><span class="line">Written by Donald Duck.&lt;br&gt;</span><br><span class="line">Visit us at:&lt;br&gt;</span><br><span class="line">Example.com&lt;br&gt;</span><br><span class="line">Box 564,Disneyland&lt;br&gt;</span><br><span class="line">USA</span><br><span class="line">&lt;/address&gt;</span><br><span class="line">为了体现折行（可能并没有）</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果：</strong><br>为了体现折行</p>
+<address>
+Written by Donald Duck.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564,Disneyland<br>
+USA
+</address>
+为了体现折行（可能并没有）
+
+<hr>
+<h2 id="用于著作标题的HTML-lt-cite-gt"><a href="#用于著作标题的HTML-lt-cite-gt" class="headerlink" title="用于著作标题的HTML&lt;cite&gt;"></a>用于著作标题的HTML<code>&lt;cite&gt;</code></h2><p>HTML<code>&lt;cite&gt;</code>元素定义<strong>著作的标题</strong>。<br>浏览器通常会以斜体显示<code>&lt;cite&gt;</code>元素。<br><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edward Munch. Painted in 1893.&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果：</strong></p>
+<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+<hr>
+<h2 id="用于双向重写的HTML-lt-bdo-gt"><a href="#用于双向重写的HTML-lt-bdo-gt" class="headerlink" title="用于双向重写的HTML&lt;bdo&gt;"></a>用于双向重写的HTML<code>&lt;bdo&gt;</code></h2><p>HTML<code>&lt;bdo&gt;</code>元素定义双流向覆盖(bi-directional override)。<br><code>&lt;bdo&gt;</code>元素用于覆盖当前文本方向：<br><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;bdo dir=&quot;rtl&quot;&gt;This text will be written from right to left&lt;/bdo&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果：</strong><br><bdo dir="rtl">This text will be written from right to left</bdo></p>
+<hr>
+<h2 id="HTML引文、引用和定义元素"><a href="#HTML引文、引用和定义元素" class="headerlink" title="HTML引文、引用和定义元素"></a>HTML引文、引用和定义元素</h2><table>
+<thead>
+<tr>
+<th align="left">标签</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>&lt;abbr&gt;</code></td>
+<td align="left">定义缩写或首字母缩略语。</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;address&gt;</code></td>
+<td align="left">定义文档作者或拥有者的联系信息。(斜体、折行)</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;bdo&gt;</code></td>
+<td align="left">定义文本方向。</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;blockquote&gt;</code></td>
+<td align="left">定义从其他来源引用的节。</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;dfn&gt;</code></td>
+<td align="left">定义项目或缩略词的定义。</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;q&gt;</code></td>
+<td align="left">定义短的行内引用。</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;cite&gt;</code></td>
+<td align="left">定义著作的标题。(斜体)</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="HTML计算机代码元素"><a href="#HTML计算机代码元素" class="headerlink" title="HTML计算机代码元素"></a>HTML计算机代码元素</h1><h2 id="HTML键盘格式"><a href="#HTML键盘格式" class="headerlink" title="HTML键盘格式"></a>HTML键盘格式</h2><p>HTML<code>&lt;kbd&gt;</code>元素定义<strong>键盘输入：</strong><br><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;To open a file,select:&lt;/p&gt;</span><br><span class="line">&lt;p&gt;&lt;kbd&gt;File|Open...&lt;/kbd&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果：</strong></p>
+<p>To open a file,select:</p>
+<p><kbd>File|Open...</kbd></p>
+
+<hr>
+<h2 id="HTML样本格式"><a href="#HTML样本格式" class="headerlink" title="HTML样本格式"></a>HTML样本格式</h2><p>HTML<code>&lt;samp&gt;</code>元素定义<strong>计算机输出示例</strong>：<br><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;samp&gt;</span><br><span class="line">demo.example.com login: Apr 12 09:10:17</span><br><span class="line">Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189</span><br><span class="line">&lt;/samp&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果：</strong><br><samp><br>demo.example.com login: Apr 12 09:10:17<br>Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189<br></samp></p>
+<hr>
+<h2 id="HTML代码格式"><a href="#HTML代码格式" class="headerlink" title="HTML代码格式"></a>HTML代码格式</h2><p>HTML<code>&lt;code&gt;</code>元素定义<strong>编程代码示例</strong><br><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;code&gt;</span><br><span class="line">var person = &#123; firstName:&quot;Bill&quot;, lastName:&quot;Gates&quot;, age:50, eyeColor:&quot;blue&quot; &#125;</span><br><span class="line">&lt;/code&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果：</strong><br><code><br>var person = { firstName:"Bill", lastName:"Gates", age:50, eyeColor:"blue" }<br></code></p>
+<p><code>&lt;code&gt;</code>元素<strong>不保留</strong>多余的<strong>空格</strong>和<strong>折行</strong>：<br><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Coding Example:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;code&gt;</span><br><span class="line">var person = &#123;</span><br><span class="line">    firstName:&quot;Bill&quot;,</span><br><span class="line">    lastName:&quot;Gates&quot;,</span><br><span class="line">    age:50,</span><br><span class="line">    eyeColor:&quot;blue&quot;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/code&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果：</strong></p>
+<p>Coding Example:</p>
+
+<code>
+var person = {
+    firstName:"Bill",
+    lastName:"Gates",
+    age:50,
+    eyeColor:"blue"
+}
+</code>
+
+<p><strong>如果需要保留空格和折行，必须在<code>&lt;pre&gt;</code>元素中包围代码:</strong></p>
+<p><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Coding Example:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;code&gt;</span><br><span class="line">&lt;pre&gt;</span><br><span class="line">var person = &#123;</span><br><span class="line">    firstName:&quot;Bill&quot;,</span><br><span class="line">    lastName:&quot;Gates&quot;,</span><br><span class="line">    age:50,</span><br><span class="line">    eyeColor:&quot;blue&quot;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/pre&gt;</span><br><span class="line">&lt;/code&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果：</strong></p>
+<p>Coding Example:</p>
+
+<code>
+<pre>
+var person = {
+    firstName:"Bill",
+    lastName:"Gates",
+    age:50,
+    eyeColor:"blue"
+}
+</pre>
+</code>
+
+<hr>
+<h2 id="HTML变量格式化"><a href="#HTML变量格式化" class="headerlink" title="HTML变量格式化"></a>HTML变量格式化</h2><p>HTML <code>&lt;var&gt;</code>元素定义<strong>数学变量</strong>：<br><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Einstein wrote:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;&lt;var&gt;E = m c&lt;sup&gt;2&lt;/sup&gt;&lt;/var&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果：</strong></p>
+<p>Einstein wrote:</p>
+
+<p><var>E = m c<sup>2</sup></var></p>
+
+<hr>
+<h2 id="HTML计算机代码元素-1"><a href="#HTML计算机代码元素-1" class="headerlink" title="HTML计算机代码元素"></a>HTML计算机代码元素</h2><table>
+<thead>
+<tr>
+<th align="left">标签</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>&lt;code&gt;</code></td>
+<td align="left">定义计算机代码文本</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;kbd&gt;</code></td>
+<td align="left">定义键盘文本</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;samp&gt;</code></td>
+<td align="left">定义计算机代码示例</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;var&gt;</code></td>
+<td align="left">定义数学变量</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;pre&gt;</code></td>
+<td align="left">定义预格式化文本</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="HTML注释-1"><a href="#HTML注释-1" class="headerlink" title="HTML注释"></a>HTML注释</h1><p><strong>注释标签<code>&lt;!--</code>与<code>--&gt;</code>用于在HTML插入注释</strong>。</p>
+<h2 id="HTML注释标签"><a href="#HTML注释标签" class="headerlink" title="HTML注释标签"></a>HTML注释标签</h2><p><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 在此处写注释 --&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注释：</strong> 在开始标签中有一个惊叹号，但是结束标签中没有。<br>浏览器不会显示注释。</p>
+<hr>
+<h2 id="条件注释"><a href="#条件注释" class="headerlink" title="条件注释"></a>条件注释</h2><p><strong>实例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--[if IE 8]&gt;</span><br><span class="line">    .... some HTML here ....</span><br><span class="line">&lt;![endif]--&gt;</span><br></pre></td></tr></table></figure>
+
+<p>条件注释定义是只有Internet Explorer执行的HTML标签。</p>
+<hr>
+<h1 id="HTML-CSS"><a href="#HTML-CSS" class="headerlink" title="HTML CSS"></a>HTML CSS</h1><p><strong>通过使用HTML4.0，所有格式化代码均可移出HTML文档，然后移入一个独立的样式表。</strong></p>
+<h2 id="如何使用样式"><a href="#如何使用样式" class="headerlink" title="如何使用样式"></a>如何使用样式</h2><p>当浏览器读到一个样式表，它就会按照这个样式表对文档进行格式化。<br>有以下三种方式来插入样式表：</p>
+<ul>
+<li>外部样式表<br>当样式需要被应用到很多页面的时候，外部样式表将是理想的选择。使用外部样式表，你就可以通过更改一个文件来改变整个站点的外观。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;</span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>内部样式表<br>当单个文件需要特别样式时，就可以使用内部样式表。你可以在head部分通过<code>&lt;style&gt;</code>标签定义内部样式表。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line"></span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">body &#123;background-color:red&#125;</span><br><span class="line">p &#123;margin-left:20px&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>内联样式<br>当特殊的样式需要应用到个别元素时，就可以使用内联样式。使用内联样式的方法是在相关的标签中使用样式属性。样式属性可以包含任何CSS属性。以下示例显示出如何改变段落的颜色和左外边距。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style=&quot;color:red;margin-left:20px&quot;&gt;</span><br><span class="line">This is a paragraph</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<hr>
+<table>
+<thead>
+<tr>
+<th align="left">标签</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>&lt;style&gt;</code></td>
+<td align="left">定义样式定义。</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;link&gt;</code></td>
+<td align="left">定义资源引用。</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;div&gt;</code></td>
+<td align="left">定义文档中的节或区域（块级）。</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;span&gt;</code></td>
+<td align="left">定义文档中的行内的小块或区域。</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;font&gt;</code></td>
+<td align="left">规定文本的字体、字体尺寸、字体颜色。<strong>不赞成使用</strong>。请使用样式。</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;basefont&gt;</code></td>
+<td align="left">定义基准字体。<strong>不赞成使用</strong>。请使用样式。</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;center&gt;</code></td>
+<td align="left">对文本进行水平居中。<strong>不赞成使用</strong>。请使用样式。</td>
+</tr>
+</tbody></table>
 
       
 
@@ -611,6 +859,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2019/08/14/HTML基础（上）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          HTML基础（上）
+        
+      </div>
+    </a>
+  
   
     <a href="/2019/08/14/十六进制颜色码/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">十六进制颜色码</div>
@@ -640,7 +897,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML简介"><span class="toc-number">1.</span> <span class="toc-text">HTML简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#实例"><span class="toc-number">1.1.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是HTML？"><span class="toc-number">1.2.</span> <span class="toc-text">什么是HTML？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML标签"><span class="toc-number">1.3.</span> <span class="toc-text">HTML标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML文档-网页"><span class="toc-number">1.4.</span> <span class="toc-text">HTML文档=网页</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML基础"><span class="toc-number">2.</span> <span class="toc-text">HTML基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML标题"><span class="toc-number">2.1.</span> <span class="toc-text">HTML标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML段落"><span class="toc-number">2.2.</span> <span class="toc-text">HTML段落</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML链接"><span class="toc-number">2.3.</span> <span class="toc-text">HTML链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML图像"><span class="toc-number">2.4.</span> <span class="toc-text">HTML图像</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML元素"><span class="toc-number">3.</span> <span class="toc-text">HTML元素</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML元素-1"><span class="toc-number">3.1.</span> <span class="toc-text">HTML元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML元素语法"><span class="toc-number">3.2.</span> <span class="toc-text">HTML元素语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#嵌套的HTML元素"><span class="toc-number">3.3.</span> <span class="toc-text">嵌套的HTML元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML实例解释"><span class="toc-number">3.4.</span> <span class="toc-text">HTML实例解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#空的HTML元素"><span class="toc-number">3.5.</span> <span class="toc-text">空的HTML元素</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML属性"><span class="toc-number">4.</span> <span class="toc-text">HTML属性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML属性-1"><span class="toc-number">4.1.</span> <span class="toc-text">HTML属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#属性实例"><span class="toc-number">4.2.</span> <span class="toc-text">属性实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更多HTML属性实例"><span class="toc-number">4.3.</span> <span class="toc-text">更多HTML属性实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#始终为属性值加引号"><span class="toc-number">4.4.</span> <span class="toc-text">始终为属性值加引号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML属性参考手册"><span class="toc-number">4.5.</span> <span class="toc-text">HTML属性参考手册</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML标题-1"><span class="toc-number">5.</span> <span class="toc-text">HTML标题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML标题-2"><span class="toc-number">5.1.</span> <span class="toc-text">HTML标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML水平线"><span class="toc-number">5.2.</span> <span class="toc-text">HTML水平线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML注释"><span class="toc-number">5.3.</span> <span class="toc-text">HTML注释</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML段落-1"><span class="toc-number">6.</span> <span class="toc-text">HTML段落</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML段落-2"><span class="toc-number">6.1.</span> <span class="toc-text">HTML段落</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML折行"><span class="toc-number">6.2.</span> <span class="toc-text">HTML折行</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML样式"><span class="toc-number">7.</span> <span class="toc-text">HTML样式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#不赞成使用的标签和属性"><span class="toc-number">7.1.</span> <span class="toc-text">不赞成使用的标签和属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML样式实例"><span class="toc-number">7.2.</span> <span class="toc-text">HTML样式实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML样式实例-字体、颜色和尺寸"><span class="toc-number">7.3.</span> <span class="toc-text">HTML样式实例-字体、颜色和尺寸</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML样式实例-文本对齐"><span class="toc-number">7.4.</span> <span class="toc-text">HTML样式实例-文本对齐</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML文本格式化"><span class="toc-number">8.</span> <span class="toc-text">HTML文本格式化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#文本格式化标签"><span class="toc-number">8.1.</span> <span class="toc-text">文本格式化标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#“计算机输出”标签"><span class="toc-number">8.2.</span> <span class="toc-text">“计算机输出”标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引用、引用和术语定义"><span class="toc-number">8.3.</span> <span class="toc-text">引用、引用和术语定义</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML简介"><span class="toc-number">1.</span> <span class="toc-text">HTML简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#实例"><span class="toc-number">1.1.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是HTML？"><span class="toc-number">1.2.</span> <span class="toc-text">什么是HTML？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML标签"><span class="toc-number">1.3.</span> <span class="toc-text">HTML标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML文档-网页"><span class="toc-number">1.4.</span> <span class="toc-text">HTML文档=网页</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML基础"><span class="toc-number">2.</span> <span class="toc-text">HTML基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML标题"><span class="toc-number">2.1.</span> <span class="toc-text">HTML标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML段落"><span class="toc-number">2.2.</span> <span class="toc-text">HTML段落</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML链接"><span class="toc-number">2.3.</span> <span class="toc-text">HTML链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML图像"><span class="toc-number">2.4.</span> <span class="toc-text">HTML图像</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML元素"><span class="toc-number">3.</span> <span class="toc-text">HTML元素</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML元素-1"><span class="toc-number">3.1.</span> <span class="toc-text">HTML元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML元素语法"><span class="toc-number">3.2.</span> <span class="toc-text">HTML元素语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#嵌套的HTML元素"><span class="toc-number">3.3.</span> <span class="toc-text">嵌套的HTML元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML实例解释"><span class="toc-number">3.4.</span> <span class="toc-text">HTML实例解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#空的HTML元素"><span class="toc-number">3.5.</span> <span class="toc-text">空的HTML元素</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML属性"><span class="toc-number">4.</span> <span class="toc-text">HTML属性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML属性-1"><span class="toc-number">4.1.</span> <span class="toc-text">HTML属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#属性实例"><span class="toc-number">4.2.</span> <span class="toc-text">属性实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更多HTML属性实例"><span class="toc-number">4.3.</span> <span class="toc-text">更多HTML属性实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#始终为属性值加引号"><span class="toc-number">4.4.</span> <span class="toc-text">始终为属性值加引号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML属性参考手册"><span class="toc-number">4.5.</span> <span class="toc-text">HTML属性参考手册</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML标题-1"><span class="toc-number">5.</span> <span class="toc-text">HTML标题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML标题-2"><span class="toc-number">5.1.</span> <span class="toc-text">HTML标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML水平线"><span class="toc-number">5.2.</span> <span class="toc-text">HTML水平线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML注释"><span class="toc-number">5.3.</span> <span class="toc-text">HTML注释</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML段落-1"><span class="toc-number">6.</span> <span class="toc-text">HTML段落</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML段落-2"><span class="toc-number">6.1.</span> <span class="toc-text">HTML段落</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML折行"><span class="toc-number">6.2.</span> <span class="toc-text">HTML折行</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML样式"><span class="toc-number">7.</span> <span class="toc-text">HTML样式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#不赞成使用的标签和属性"><span class="toc-number">7.1.</span> <span class="toc-text">不赞成使用的标签和属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML样式实例"><span class="toc-number">7.2.</span> <span class="toc-text">HTML样式实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML样式实例-字体、颜色和尺寸"><span class="toc-number">7.3.</span> <span class="toc-text">HTML样式实例-字体、颜色和尺寸</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML样式实例-文本对齐"><span class="toc-number">7.4.</span> <span class="toc-text">HTML样式实例-文本对齐</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML文本格式化"><span class="toc-number">8.</span> <span class="toc-text">HTML文本格式化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#文本格式化标签"><span class="toc-number">8.1.</span> <span class="toc-text">文本格式化标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#“计算机输出”标签"><span class="toc-number">8.2.</span> <span class="toc-text">“计算机输出”标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引用、引用和术语定义"><span class="toc-number">8.3.</span> <span class="toc-text">引用、引用和术语定义</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML引用"><span class="toc-number">9.</span> <span class="toc-text">HTML引用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-lt-q-gt-用于短的引用"><span class="toc-number">9.1.</span> <span class="toc-text">HTML&lt;q&gt;用于短的引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用于长引用的HTML-lt-blockquote-gt"><span class="toc-number">9.2.</span> <span class="toc-text">用于长引用的HTML&lt;blockquote&gt;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用于缩略词的HTML-lt-abbr-gt"><span class="toc-number">9.3.</span> <span class="toc-text">用于缩略词的HTML&lt;abbr&gt;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用于定义的HTML-lt-dfn-gt"><span class="toc-number">9.4.</span> <span class="toc-text">用于定义的HTML&lt;dfn&gt;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用于联系信息的HTML-lt-address-gt"><span class="toc-number">9.5.</span> <span class="toc-text">用于联系信息的HTML&lt;address&gt;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用于著作标题的HTML-lt-cite-gt"><span class="toc-number">9.6.</span> <span class="toc-text">用于著作标题的HTML&lt;cite&gt;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用于双向重写的HTML-lt-bdo-gt"><span class="toc-number">9.7.</span> <span class="toc-text">用于双向重写的HTML&lt;bdo&gt;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML引文、引用和定义元素"><span class="toc-number">9.8.</span> <span class="toc-text">HTML引文、引用和定义元素</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML计算机代码元素"><span class="toc-number">10.</span> <span class="toc-text">HTML计算机代码元素</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML键盘格式"><span class="toc-number">10.1.</span> <span class="toc-text">HTML键盘格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML样本格式"><span class="toc-number">10.2.</span> <span class="toc-text">HTML样本格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML代码格式"><span class="toc-number">10.3.</span> <span class="toc-text">HTML代码格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML变量格式化"><span class="toc-number">10.4.</span> <span class="toc-text">HTML变量格式化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML计算机代码元素-1"><span class="toc-number">10.5.</span> <span class="toc-text">HTML计算机代码元素</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML注释-1"><span class="toc-number">11.</span> <span class="toc-text">HTML注释</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML注释标签"><span class="toc-number">11.1.</span> <span class="toc-text">HTML注释标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#条件注释"><span class="toc-number">11.2.</span> <span class="toc-text">条件注释</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML-CSS"><span class="toc-number">12.</span> <span class="toc-text">HTML CSS</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#如何使用样式"><span class="toc-number">12.1.</span> <span class="toc-text">如何使用样式</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
