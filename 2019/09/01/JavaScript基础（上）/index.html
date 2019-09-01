@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="LLLOG">
 <meta property="og:description" content="JavaScript简介JavaScript能够改变HTML内容getElementById()十多个JavaScript HTML方法之一。本例使用该方法来”查找” id=”demo”的HTML元素，并把元素内容(innerHTML)更改为”Hello JavaScript”实例 1document.getElementById(&amp;quot;demo&amp;quot;).innerHTML=&amp;quot">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-01T00:40:31.216Z">
+<meta property="og:updated_time" content="2019-09-01T03:23:29.108Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript基础（上）">
 <meta name="twitter:description" content="JavaScript简介JavaScript能够改变HTML内容getElementById()十多个JavaScript HTML方法之一。本例使用该方法来”查找” id=”demo”的HTML元素，并把元素内容(innerHTML)更改为”Hello JavaScript”实例 1document.getElementById(&amp;quot;demo&amp;quot;).innerHTML=&amp;quot">
@@ -165,57 +165,178 @@
         <h1 id="JavaScript简介"><a href="#JavaScript简介" class="headerlink" title="JavaScript简介"></a>JavaScript简介</h1><h2 id="JavaScript能够改变HTML内容"><a href="#JavaScript能够改变HTML内容" class="headerlink" title="JavaScript能够改变HTML内容"></a>JavaScript能够改变HTML内容</h2><p><code>getElementById()</code>十多个JavaScript HTML方法之一。<br>本例使用该方法来”查找” id=”demo”的HTML元素，并把元素内容(<code>innerHTML</code>)更改为”Hello JavaScript”<br><strong>实例</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&quot;demo&quot;).innerHTML=&quot;Hello JavaScript&quot;;</span><br></pre></td></tr></table></figure>
 
-<p>注释：JavaScript同时接受双引号和单引号。<br><strong>实例</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&quot;demo&quot;).innerHTML=&apos;Hello JavaScript&apos;;</span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;JavaScript 能够改变 HTML 内容。&lt;/p&gt;</span><br><span class="line">&lt;button type=&quot;button&quot; onclick=&apos;document.getElementById(&quot;demo&quot;).innerHTML = &quot;Hello JavaScript!&quot;&apos;&gt;点击我！&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+<p style="color:red">注释：</p>
 
-<p><strong>效果</strong></p>
-<body>
-<p id="demo">JavaScript 能够改变 HTML 内容。</p>
-<button type="button" onclick="document.getElementById("demo").innerHTML = "Hello JavaScript!"">点击我！</button>
-</body>
+<p>JavaScript同时接受双引号和单引号。<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&quot;demo&quot;).innerHTML=&apos;Hello JavaScript&apos;;</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h2 id="JavaScript能够改变HTML属性"><a href="#JavaScript能够改变HTML属性" class="headerlink" title="JavaScript能够改变HTML属性"></a>JavaScript能够改变HTML属性</h2><h2 id="JavaScript能够改变HTML样式-CSS"><a href="#JavaScript能够改变HTML样式-CSS" class="headerlink" title="JavaScript能够改变HTML样式(CSS)"></a>JavaScript能够改变HTML样式(CSS)</h2><p>改变HTML元素的样式，是改变HTML属性的一种变种：<br><strong>实例</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&quot;demo&quot;).style.fontSize=&quot;25px&quot;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;JavaScript 能够改变 HTML 元素的样式。&lt;/p&gt;</span><br><span class="line">&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).style.fontSize=&apos;35px&apos;&quot;&gt;</span><br><span class="line">点击我！</span><br><span class="line">&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="JavaScript能够改变HTML属性"><a href="#JavaScript能够改变HTML属性" class="headerlink" title="JavaScript能够改变HTML属性"></a>JavaScript能够改变HTML属性</h2><p>&nbsp;</p>
+<h2 id="JavaScript能够改变HTML样式-CSS"><a href="#JavaScript能够改变HTML样式-CSS" class="headerlink" title="JavaScript能够改变HTML样式(CSS)"></a>JavaScript能够改变HTML样式(CSS)</h2><p>改变HTML元素的样式，是改变HTML属性的一种变种：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&quot;demo&quot;).style.fontSize=&quot;25px&quot;;</span><br></pre></td></tr></table></figure>
 
-<p><strong>效果</strong></p>
-<body>
-<p id="demo">JavaScript 能够改变 HTML 元素的样式。</p>
-<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">
-点击我！
-</button>
-</body>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;JavaScript 能够做什么&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;JavaScript 能够改变 HTML 元素的样式。&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).style.fontSize=&apos;35px&apos;&quot;&gt;</span><br><span class="line">点击我！</span><br><span class="line">&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
 <hr>
 <h2 id="JavaScript能够隐藏HTML元素"><a href="#JavaScript能够隐藏HTML元素" class="headerlink" title="JavaScript能够隐藏HTML元素"></a>JavaScript能够隐藏HTML元素</h2><p>可通过改变<code>display</code>样式来隐藏HTML元素：<br><strong>实例</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">document,getElementById(&quot;demo&quot;).style.display=&quot;none&quot;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;JavaScript 能够隐藏 HTML 元素。&lt;/p&gt;</span><br><span class="line">&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).style.display=&apos;none&apos;&quot;&gt;</span><br><span class="line">点击我！</span><br><span class="line">&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document,getElementById(&quot;demo&quot;).style.display=&quot;none&quot;;</span><br></pre></td></tr></table></figure>
 
-<p><strong>效果</strong></p>
-<body>
-<p id="demo">JavaScript 能够隐藏 HTML 元素。</p>
-<button type="button" onclick="document.getElementById('demo').style.display='none'">
-点击我！
-</button>
-</body>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;JavaScript 能够做什么&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;JavaScript 能够隐藏 HTML 元素。&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).style.display=&apos;none&apos;&quot;&gt;</span><br><span class="line">点击我！</span><br><span class="line">&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
 <hr>
 <h2 id="JavaScript能够显示HTML元素"><a href="#JavaScript能够显示HTML元素" class="headerlink" title="JavaScript能够显示HTML元素"></a>JavaScript能够显示HTML元素</h2><p>可通过改变<code>display</code>样式来显示隐藏的HTML元素：<br><strong>实例</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&quot;demo&quot;).style.display=&quot;block&quot;;</span><br></pre></td></tr></table></figure>
 
-<p><strong>效果</strong><br><!DOCTYPE html></p>
-<html>
-<body>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;JavaScript 能够做什么&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;JavaScript 能够显示隐藏的 HTML 元素。&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot; style=&quot;display:none&quot;&gt;Hello JavaScript!&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).style.display=&apos;block&apos;&quot;&gt;</span><br><span class="line">点击我！</span><br><span class="line">&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
-<p>JavaScript 能够显示隐藏的 HTML 元素。</p>
+<hr>
+<h1 id="JavaScript使用"><a href="#JavaScript使用" class="headerlink" title="JavaScript使用"></a>JavaScript使用</h1><h2 id="lt-script-gt-标签"><a href="#lt-script-gt-标签" class="headerlink" title="&lt;script&gt;标签"></a><code>&lt;script&gt;</code>标签</h2><p>在HTML中，JavaScript代码必须位于<code>&lt;script&gt;</code>与<code>&lt;/script&gt;</code>标签之间。<br>注释：旧的JavaScript例子也许会使用<code>type</code>属性：<code>&lt;script type=&quot;text/javascript&quot;&gt;</code>。<br>type属性不是必需的。JavaScript是HTML中的默认脚本语言。</p>
+<hr>
+<h2 id="JavaScript函数和事件"><a href="#JavaScript函数和事件" class="headerlink" title="JavaScript函数和事件"></a>JavaScript函数和事件</h2><p>JavaScript <strong>函数</strong> 是一种JavaScript代码块，它可以在调用时被执行。</p>
+<hr>
+<h2 id="lt-head-gt-或-lt-body-gt-中的JavaScript"><a href="#lt-head-gt-或-lt-body-gt-中的JavaScript" class="headerlink" title="&lt;head&gt;或&lt;body&gt;中的JavaScript"></a><code>&lt;head&gt;</code>或<code>&lt;body&gt;</code>中的JavaScript</h2><p>可以再HTML文档中放置任意数量的脚本。<br>脚本可被放置与HTML页面的<code>&lt;head&gt;</code>或<code>&lt;body&gt;</code>部分中，或兼而有之。</p>
+<hr>
+<h2 id="lt-head-gt-中的JavaScript"><a href="#lt-head-gt-中的JavaScript" class="headerlink" title="&lt;head&gt;中的JavaScript"></a><code>&lt;head&gt;</code>中的JavaScript</h2><p>本例中，JavaScript函数被放置于HTML页面的<code>&lt;head&gt;</code>部分。<br>该函数会在按钮被点击时调用：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">function myFunction()&#123;</span><br><span class="line">    document.getElementById(&quot;demo&quot;).innerHTML=&quot;段落被更改。&quot;;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;h1&gt;一张网页&lt;/h1&gt;</span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;一个段落&lt;/p&gt;</span><br><span class="line">&lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&gt;试一试&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
-<p id="demo" style="display:none">Hello JavaScript!</p>
+<hr>
+<h2 id="lt-body-gt-中的JavaScript"><a href="#lt-body-gt-中的JavaScript" class="headerlink" title="&lt;body&gt;中的JavaScript"></a><code>&lt;body&gt;</code>中的JavaScript</h2><p>在本例中，JavaScript 函数被放置于 HTML 页面的 <code>&lt;body&gt;</code>部分。<br>该函数会在按钮被点击时调用：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h1&gt;A Web Page&lt;/h1&gt;</span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;一个段落&lt;/p&gt;</span><br><span class="line">&lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&gt;试一试&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">function myFunction()&#123;</span><br><span class="line">    document.getElementById(&quot;demo&quot;).innerHTML=&quot;段落被更改。&quot;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
-<button type="button" onclick="document.getElementById('demo').style.display='block'">
-点击我！
-</button>
+<p><strong>提示：</strong> 把脚本置于<code>&lt;body&gt;</code>元素的底部，可改善显示速度，因为脚本编译会拖慢显示。</p>
+<hr>
+<h2 id="外部脚本"><a href="#外部脚本" class="headerlink" title="外部脚本"></a>外部脚本</h2><p>脚本可放置于外部文件中：<br><strong>外部文件：myScript.js</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function myFunction() &#123;</span><br><span class="line">   document.getElementById(&quot;demo&quot;).innerHTML = &quot;段落被更改。&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</body>
-</html>
+<p>JavaScript文件的扩展名是<code>.js</code>。<br>如果需要使用外部脚本，请在<code>&lt;script&gt;</code>标签的<code>src</code>（source）属性中设置脚本的名称：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;myScript.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>可以在<code>&lt;head&gt;</code>或<code>&lt;body&gt;</code>中放置外部脚本引用。<br>该脚本的表现与它被放置于<code>&lt;script&gt;</code>标签中是一样的。<br><strong>注释：</strong> 外部脚本不能包含<code>&lt;script&gt;</code>标签。</p>
+<hr>
+<h2 id="外部JavaScript的优势"><a href="#外部JavaScript的优势" class="headerlink" title="外部JavaScript的优势"></a>外部JavaScript的优势</h2><p>在外部文件中放置脚本有如下优势：</p>
+<ul>
+<li>分离了HTML和代码</li>
+<li>使HTML和JavaScript更易于阅读和维护</li>
+<li>已缓存的JavaScript文件可加速页面加载<br>如需向一张页面添加多个脚本文件-请使用多个script标签：</li>
+</ul>
+<p><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;myScript1.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;myScript2.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="外部引用"><a href="#外部引用" class="headerlink" title="外部引用"></a>外部引用</h2><p>可通过完整的URL或相对于当前网页的路径引用外部脚本：<br><strong>实例</strong> 使用完整的URL来链接至脚本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;https://www.w3school.com.cn/js/myScript1.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong> 使用位于当前网站上指定文件夹中的脚本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;/js/myScript1.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong> 链接与当前页面相同文件夹的脚本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;myScript1.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="JavaScript输出"><a href="#JavaScript输出" class="headerlink" title="JavaScript输出"></a>JavaScript输出</h1><p>JavaScript不提供任何内建的打印或显示函数</p>
+<hr>
+<h2 id="JavaScript显示方案"><a href="#JavaScript显示方案" class="headerlink" title="JavaScript显示方案"></a>JavaScript显示方案</h2><p>JavaScript能够以不同方式“显示”数据：</p>
+<ul>
+<li>使用<code>window.alert()</code>写入警告框</li>
+<li>使用<code>document.write()</code>写入HTML输入</li>
+<li>使用<code>innerHTML</code>写入HTML元素</li>
+<li>使用<code>console.log()</code>写入浏览器控制台</li>
+</ul>
+<hr>
+<h2 id="使用innerHTML"><a href="#使用innerHTML" class="headerlink" title="使用innerHTML"></a>使用innerHTML</h2><p>如需访问HTML元素，JavaScript可使用<code>document.getElementById(id)</code>方法。<br><code>id</code>属性定义HTML元素。innerHTML属性定义HTML内容：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;h1&gt;我的第一张网页&lt;/h1&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;我的第一个段落&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML=5+6;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>提示：</strong> 更改HTML元素的innerHTML属性是在HTML中显示数据的常用方法。</p>
+<hr>
+<h2 id="使用document-write"><a href="#使用document-write" class="headerlink" title="使用document.write()"></a>使用document.write()</h2><p>处于测试目的，使用<code>document.write()</code>比较方便：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">document.write(5+6);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p style="color:red;font-size:20px"><b>注意：</b></p> 
+
+<p>在HTML文档完全加载后使用 <code>document.write()</code> 将删除所有已有的HTML:</p>
+<p style="color:orange">提示：document.write()方法仅用于测试。</p>
+
+<hr>
+<h2 id="使用window-alert"><a href="#使用window-alert" class="headerlink" title="使用window.alert()"></a>使用window.alert()</h2><p>使用警告框来显示数据：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">window.alert(5+6);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="使用console-log"><a href="#使用console-log" class="headerlink" title="使用console.log()"></a>使用console.log()</h2><p>在浏览器中可以使用<code>console.log()</code>方法显示数据。<br>通过F12来激活浏览器控制台，并在菜单中选择“控制台”。<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">console.log(5+6);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="JavaScript语句"><a href="#JavaScript语句" class="headerlink" title="JavaScript语句"></a>JavaScript语句</h1><p>在HTML中，JavaScript语句是由web浏览器“执行”的“指令”。</p>
+<hr>
+<h2 id="JavaScript程序"><a href="#JavaScript程序" class="headerlink" title="JavaScript程序"></a>JavaScript程序</h2><p><strong>计算机程序</strong>是由计算机“执行”的一系列“指令”。<br>在编程语言中，这些编程指令被称为语句。<br><strong>JavaScript程序</strong>就是一系列的编程语句。<br><strong>注释：</strong> 在HTML中，JavaScript程序由web浏览器执行。</p>
+<hr>
+<p>JavaScript语句<br>JavaScript语句由以下构成：<br><strong>值、运算符、表达式、关键词和注释。</strong><br><strong>实例</strong> 这条语句告诉浏览器在id=”demo”的HTML元素中输出”Hello Kitty.”:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&quot;demo&quot;).innerHTML=&quot;Hello Kitty.&quot;;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="分号"><a href="#分号" class="headerlink" title="分号;"></a>分号;</h2><p>分号分隔JavaScript语句。<br>在每条可执行的语句之后添加分号。<br>如果有分号分隔，允许在同一行写多条语句。</p>
+<hr>
+<h2 id="JavaScript关键词"><a href="#JavaScript关键词" class="headerlink" title="JavaScript关键词"></a>JavaScript关键词</h2><table>
+<thead>
+<tr>
+<th align="left">关键词</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">debugger</td>
+<td align="left">停止执行JavaScript，并调用调试函数（如果可用）。</td>
+</tr>
+<tr>
+<td align="left">function</td>
+<td align="left">声明函数。</td>
+</tr>
+<tr>
+<td align="left">try…catch</td>
+<td align="left">对语句块实现错误处理。</td>
+</tr>
+<tr>
+<td align="left">var</td>
+<td align="left">声明变量。</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="JavaScript语法"><a href="#JavaScript语法" class="headerlink" title="JavaScript语法"></a>JavaScript语法</h1><h2 id="JavaScript值"><a href="#JavaScript值" class="headerlink" title="JavaScript值"></a>JavaScript值</h2><p>JavaScript语句定义两种类型的值：<strong>混合制和变量值。</strong><br>混合制被称为<strong>字面量（literal）</strong>。<br>变量值被称为<strong>变量</strong>。</p>
+<hr>
+<h2 id="JavaScript字面量"><a href="#JavaScript字面量" class="headerlink" title="JavaScript字面量"></a>JavaScript字面量</h2><p>书写混合值最重要的规则是：<br>写<strong>数值</strong>有无小数点均可。<br><strong>字符串</strong>是文本，由单引号或双引号包围。</p>
+<hr>
+<h2 id="JavaScript变量"><a href="#JavaScript变量" class="headerlink" title="JavaScript变量"></a>JavaScript变量</h2><p>使用<code>var</code>关键词来声明变量。</p>
+<hr>
+<h2 id="JavaScript表达式"><a href="#JavaScript表达式" class="headerlink" title="JavaScript表达式"></a>JavaScript表达式</h2><ul>
+<li>表达式是值、变量和运算符的组合，计算结果是值。</li>
+<li>表达式也可包含变量值：<br><code>x*10</code></li>
+<li>值可以是多种类型，比如数值和字符串。<br>例如，”Bill” + “ “ + “Gates”,计算为”Bill Gates”: </li>
+</ul>
+<hr>
+<h2 id="JavaScript标识符"><a href="#JavaScript标识符" class="headerlink" title="JavaScript标识符"></a>JavaScript标识符</h2><p>标识符是名称。<br>在JavaScript中，首字符必须是字母、下划线或美元符号（$）。</p>
+<p style="color:orange">提示：</p>
+
+<p>数值不可以作为首字符。</p>
+<hr>
+<h1 id="JavaScript运算符"><a href="#JavaScript运算符" class="headerlink" title="JavaScript运算符"></a>JavaScript运算符</h1><h2 id="JavaScript类型运算符"><a href="#JavaScript类型运算符" class="headerlink" title="JavaScript类型运算符"></a>JavaScript类型运算符</h2><table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">typeof</td>
+<td align="left">返回变量的类型</td>
+</tr>
+<tr>
+<td align="left">instanceof</td>
+<td align="left">返回true，如果对象是对象类型的实例。</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="JavaScript位运算符"><a href="#JavaScript位运算符" class="headerlink" title="JavaScript位运算符"></a>JavaScript位运算符</h2><p>位运算符处理32位数。<br>该运算中的任何数值运算数都会被转换为32位的数。结果会被转换回JavaScript数。<br>运算符|描述|例子|等同于|结果|十进制<br>:-|:-|:-|:-|:-|:-<br>&amp;|与|5&amp;1|0101 &amp; 0101|0001|1<br><code>|</code>|或|5<code>|</code>1|0101<code>|</code>0001|0101|5<br><del>|非|</del>5|~0101|1010|10<br>^|异或|5^1|0101^0001|0100|4<br>&lt;&lt;|零填充左位移|5&lt;&lt;1|0101&lt;&lt;1|1010|10<br><code>&gt;&gt;</code>|有符号右位移|5<code>&gt;&gt;</code>1|0101<code>&gt;&gt;</code>1|0010|2<br><code>&gt;&gt;&gt;</code>|零填充右位移|5<code>&gt;&gt;&gt;</code>1|0101<code>&gt;&gt;&gt;</code>1|0010|2</p>
+<p>上例使用4位无符号的例子。但是JavaScript使用32位有符号数。<br>因此，在JavaScript中，~5不会返回10，而是返回-6.<br>~00000000000000000000000000000101 将返回11111111111111111111111111111010。</p>
+
       
 
       
@@ -316,7 +437,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript简介"><span class="toc-number">1.</span> <span class="toc-text">JavaScript简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript能够改变HTML内容"><span class="toc-number">1.1.</span> <span class="toc-text">JavaScript能够改变HTML内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript能够改变HTML属性"><span class="toc-number">1.2.</span> <span class="toc-text">JavaScript能够改变HTML属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript能够改变HTML样式-CSS"><span class="toc-number">1.3.</span> <span class="toc-text">JavaScript能够改变HTML样式(CSS)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript能够隐藏HTML元素"><span class="toc-number">1.4.</span> <span class="toc-text">JavaScript能够隐藏HTML元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript能够显示HTML元素"><span class="toc-number">1.5.</span> <span class="toc-text">JavaScript能够显示HTML元素</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript简介"><span class="toc-number">1.</span> <span class="toc-text">JavaScript简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript能够改变HTML内容"><span class="toc-number">1.1.</span> <span class="toc-text">JavaScript能够改变HTML内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript能够改变HTML属性"><span class="toc-number">1.2.</span> <span class="toc-text">JavaScript能够改变HTML属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript能够改变HTML样式-CSS"><span class="toc-number">1.3.</span> <span class="toc-text">JavaScript能够改变HTML样式(CSS)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript能够隐藏HTML元素"><span class="toc-number">1.4.</span> <span class="toc-text">JavaScript能够隐藏HTML元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript能够显示HTML元素"><span class="toc-number">1.5.</span> <span class="toc-text">JavaScript能够显示HTML元素</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript使用"><span class="toc-number">2.</span> <span class="toc-text">JavaScript使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-script-gt-标签"><span class="toc-number">2.1.</span> <span class="toc-text">&lt;script&gt;标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript函数和事件"><span class="toc-number">2.2.</span> <span class="toc-text">JavaScript函数和事件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-head-gt-或-lt-body-gt-中的JavaScript"><span class="toc-number">2.3.</span> <span class="toc-text">&lt;head&gt;或&lt;body&gt;中的JavaScript</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-head-gt-中的JavaScript"><span class="toc-number">2.4.</span> <span class="toc-text">&lt;head&gt;中的JavaScript</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-body-gt-中的JavaScript"><span class="toc-number">2.5.</span> <span class="toc-text">&lt;body&gt;中的JavaScript</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#外部脚本"><span class="toc-number">2.6.</span> <span class="toc-text">外部脚本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#外部JavaScript的优势"><span class="toc-number">2.7.</span> <span class="toc-text">外部JavaScript的优势</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#外部引用"><span class="toc-number">2.8.</span> <span class="toc-text">外部引用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript输出"><span class="toc-number">3.</span> <span class="toc-text">JavaScript输出</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript显示方案"><span class="toc-number">3.1.</span> <span class="toc-text">JavaScript显示方案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用innerHTML"><span class="toc-number">3.2.</span> <span class="toc-text">使用innerHTML</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用document-write"><span class="toc-number">3.3.</span> <span class="toc-text">使用document.write()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用window-alert"><span class="toc-number">3.4.</span> <span class="toc-text">使用window.alert()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用console-log"><span class="toc-number">3.5.</span> <span class="toc-text">使用console.log()</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript语句"><span class="toc-number">4.</span> <span class="toc-text">JavaScript语句</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript程序"><span class="toc-number">4.1.</span> <span class="toc-text">JavaScript程序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分号"><span class="toc-number">4.2.</span> <span class="toc-text">分号;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript关键词"><span class="toc-number">4.3.</span> <span class="toc-text">JavaScript关键词</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript语法"><span class="toc-number">5.</span> <span class="toc-text">JavaScript语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript值"><span class="toc-number">5.1.</span> <span class="toc-text">JavaScript值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript字面量"><span class="toc-number">5.2.</span> <span class="toc-text">JavaScript字面量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript变量"><span class="toc-number">5.3.</span> <span class="toc-text">JavaScript变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript表达式"><span class="toc-number">5.4.</span> <span class="toc-text">JavaScript表达式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript标识符"><span class="toc-number">5.5.</span> <span class="toc-text">JavaScript标识符</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript运算符"><span class="toc-number">6.</span> <span class="toc-text">JavaScript运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript类型运算符"><span class="toc-number">6.1.</span> <span class="toc-text">JavaScript类型运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript位运算符"><span class="toc-number">6.2.</span> <span class="toc-text">JavaScript位运算符</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
