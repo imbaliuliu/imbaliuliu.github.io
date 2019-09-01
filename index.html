@@ -140,6 +140,68 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-PHP基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/01/PHP基础/">PHP基础</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/01/PHP基础/" class="archive-article-date">
+  	<time datetime="2019-09-01T07:05:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/01/PHP基础/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-JavaScript基础（上）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -315,7 +377,23 @@
 
 <p>数值不可以作为首字符。</p>
 <hr>
-<h1 id="JavaScript运算符"><a href="#JavaScript运算符" class="headerlink" title="JavaScript运算符"></a>JavaScript运算符</h1><h2 id="JavaScript类型运算符"><a href="#JavaScript类型运算符" class="headerlink" title="JavaScript类型运算符"></a>JavaScript类型运算符</h2><table>
+<h1 id="JavaScript运算符"><a href="#JavaScript运算符" class="headerlink" title="JavaScript运算符"></a>JavaScript运算符</h1><h2 id="JavaScript比较运算符"><a href="#JavaScript比较运算符" class="headerlink" title="JavaScript比较运算符"></a>JavaScript比较运算符</h2><table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>===</code></td>
+<td align="left">等值等型</td>
+</tr>
+<tr>
+<td align="left"><code>!==</code></td>
+<td align="left">不等值或不等型</td>
+</tr>
+</tbody></table>
+<h2 id="JavaScript类型运算符"><a href="#JavaScript类型运算符" class="headerlink" title="JavaScript类型运算符"></a>JavaScript类型运算符</h2><table>
 <thead>
 <tr>
 <th align="left">运算符</th>
@@ -332,8 +410,480 @@
 </tr>
 </tbody></table>
 <hr>
-<h2 id="JavaScript位运算符"><a href="#JavaScript位运算符" class="headerlink" title="JavaScript位运算符"></a>JavaScript位运算符</h2><p>位运算符处理32位数。<br>该运算中的任何数值运算数都会被转换为32位的数。结果会被转换回JavaScript数。<br>运算符|描述|例子|等同于|结果|十进制<br>:-|:-|:-|:-|:-|:-<br>&amp;|与|5&amp;1|0101 &amp; 0101|0001|1<br><code>|</code>|或|5<code>|</code>1|0101<code>|</code>0001|0101|5<br><del>|非|</del>5|~0101|1010|10<br>^|异或|5^1|0101^0001|0100|4<br>&lt;&lt;|零填充左位移|5&lt;&lt;1|0101&lt;&lt;1|1010|10<br><code>&gt;&gt;</code>|有符号右位移|5<code>&gt;&gt;</code>1|0101<code>&gt;&gt;</code>1|0010|2<br><code>&gt;&gt;&gt;</code>|零填充右位移|5<code>&gt;&gt;&gt;</code>1|0101<code>&gt;&gt;&gt;</code>1|0010|2</p>
+<h2 id="JavaScript位运算符"><a href="#JavaScript位运算符" class="headerlink" title="JavaScript位运算符"></a>JavaScript位运算符</h2><p>位运算符处理32位数。<br>该运算中的任何数值运算数都会被转换为32位的数。结果会被转换回JavaScript数。<br>运算符|描述|例子|等同于|结果|十进制<br>:-|:-|:-|:-|:-|:-<br>&amp;|与|5&amp;1|0101 &amp; 0101|0001|1<br><code>|</code>|或|5<code>|</code>1|0101<code>|</code>0001|0101|5<br><del>|非|</del>5|~0101|1010|10<br>^|异或|5^1|0101^0001|0100|4<br>&lt;&lt;|零填充左位移|5&lt;&lt;1|0101&lt;&lt;1|1010|10<br><code>&gt;&gt;</code>|有符号右位移|5<code>&gt;&gt;</code>1|0101<code>&gt;&gt;</code>1|0010|291<br><code>&gt;&gt;&gt;</code>|零填充右位移|5<code>&gt;&gt;&gt;</code>1|0101<code>&gt;&gt;&gt;</code>1|0010|2</p>
 <p>上例使用4位无符号的例子。但是JavaScript使用32位有符号数。<br>因此，在JavaScript中，~5不会返回10，而是返回-6.<br>~00000000000000000000000000000101 将返回11111111111111111111111111111010。</p>
+<hr>
+<h1 id="JavaScript数据类型"><a href="#JavaScript数据类型" class="headerlink" title="JavaScript数据类型"></a>JavaScript数据类型</h1><p>字符串值、数值、布尔值、数组、对象</p>
+<hr>
+<h2 id="JavaScript数据类型-1"><a href="#JavaScript数据类型-1" class="headerlink" title="JavaScript数据类型"></a>JavaScript数据类型</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var length = 7;                               //数字</span><br><span class="line">var lastName = &quot;Gates&quot;;                       //字符串</span><br><span class="line">var cars = [&quot;Porsche&quot;,&quot;Volvo&quot;,&quot;BMW&quot;];         //数组</span><br><span class="line">var x = &#123;firstName:&quot;Bill&quot;, lastName:&quot;Gates&quot;&#125;; //对象</span><br></pre></td></tr></table></figure>
+
+<p style="color:red;font-size:20px">当数值和字符串相加时，JavaScript将把数值视作字符串。
+JavaScript从左向右计算表达式。不同的次序会产生不同的结果。</p>
+
+<p><strong>JavaScript</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var x = 911 + 7 + &quot;Porsche&quot;;</span><br></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">918Porsche</span><br></pre></td></tr></table></figure>
+
+<p><strong>JavaScript</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var x = &quot;Porsche&quot; + 911 + 7;</span><br></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Porsche9117</span><br></pre></td></tr></table></figure>
+
+<p>在第一个例子中，JavaScript把911和7视作数值，直到遇见“Porsche”。<br>在第二个例子中，由于第一个操作数是字符串，因此所有操作数都将被视为字符串。</p>
+<hr>
+<h2 id="JavaScript拥有动态类型"><a href="#JavaScript拥有动态类型" class="headerlink" title="JavaScript拥有动态类型"></a>JavaScript拥有动态类型</h2><p>这意味着相同变量可用作不同类型：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var x;           //现在 x 是undefined</span><br><span class="line">var x = 7;       //现在 x 是数值</span><br><span class="line">var x = &quot;Bill&quot;;  //现在 x 是字符串值</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="JavaScript数值"><a href="#JavaScript数值" class="headerlink" title="JavaScript数值"></a>JavaScript数值</h2><p>JavaScript只有一种数值类型<br>写述职是用不用小数点均可。<br>超大或超小的数值可以用科学计数法来写：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var y = 123e5;    //12300000</span><br><span class="line">var z = 123e-5;   //0.00123</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="JavaScript数组"><a href="#JavaScript数组" class="headerlink" title="JavaScript数组"></a>JavaScript数组</h2><p>数组的项目由逗号分隔。<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var cars = [&quot;Porsche&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="JavaScript对象"><a href="#JavaScript对象" class="headerlink" title="JavaScript对象"></a>JavaScript对象</h2><p>JavaScript对象用花括号来书写。<br>对象属性是name:value对，由逗号分隔。<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var person = &#123;firstName:&quot;Bill&quot;, lastName:&quot;Gates&quot;, age:62, eyeColor:&quot;blue&quot;&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>上例中的对象（person）有四个属性。</p>
+<hr>
+<h2 id="typeof运算符"><a href="#typeof运算符" class="headerlink" title="typeof运算符"></a>typeof运算符</h2><p>使用<code>typeof</code>来确定JavaScript变量的类型：<br>typeof运算符返回变量或表达式的类型：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">typeof &quot;&quot;                  // 返回 &quot;string&quot;</span><br><span class="line">typeof &quot;Bill&quot;              // 返回 &quot;string&quot;</span><br><span class="line">typeof &quot;Bill Gates&quot;        // 返回 &quot;string&quot;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;typeof 运算符返回变量或表达式的类型：&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = </span><br><span class="line">typeof &quot;&quot; + &quot;&lt;br&gt;&quot; +</span><br><span class="line">typeof &quot;Bill&quot; + &quot;&lt;br&gt;&quot; + </span><br><span class="line">typeof &quot;Bill Gates&quot;;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">typeof 运算符返回变量或表达式的类型：</span><br><span class="line">string</span><br><span class="line">string</span><br><span class="line">string</span><br></pre></td></tr></table></figure>
+
+<p>typeof运算符对数组返回“object”，因为在JavaScript中数组属于对象。</p>
+<hr>
+<h2 id="Undefined"><a href="#Undefined" class="headerlink" title="Undefined"></a>Undefined</h2><p><strong>实例</strong> 在JavaScript中，没有值的变量，其值是<code>undefined</code>。typeof也返回<code>undefined</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var person;           //值是 undefined，类型是undefined</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong> 任何变量可通过设置值为<code>undefined</code>进行清空。其类型也将是<code>undefined</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">person = undefined;    //值是undefined，类型是undefined</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="空值"><a href="#空值" class="headerlink" title="空值"></a>空值</h2><p>空值与<code>undefined</code>不是一回事。<br>空的字符串变量既有值也有类型。<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var car = &quot;&quot;;         //值是&quot;&quot;，类型是&quot;string&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Null"><a href="#Null" class="headerlink" title="Null"></a>Null</h2><p>在JavaScript中，<code>null</code>的数据类型是对象。<br><strong>实例</strong> 可以通过设置值为<code>null</code>清空对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var person = null;    //值是 null，但是类型仍然是对象</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong> 可以通过设置值为undefined清空对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var person = undefined;   //值是undefined，类型是undefined</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Undefined与Null的区别"><a href="#Undefined与Null的区别" class="headerlink" title="Undefined与Null的区别"></a>Undefined与Null的区别</h2><p><code>Undefined</code>与<code>null</code>的值相等，但类型不相等：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">typeof undefined          //undefined</span><br><span class="line">typeof null               //object</span><br><span class="line">null === undefined        //false</span><br><span class="line">null == undefined         //true</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="原始数据"><a href="#原始数据" class="headerlink" title="原始数据"></a>原始数据</h2><p><code>typeof</code>运算符可返回以下原始类型之一：</p>
+<ul>
+<li>string</li>
+<li>number</li>
+<li>boolean</li>
+<li>undefined</li>
+</ul>
+<hr>
+<h2 id="复杂数据"><a href="#复杂数据" class="headerlink" title="复杂数据"></a>复杂数据</h2><p><code>typeof</code>运算符可返回以下两种类型之一：</p>
+<ul>
+<li>function</li>
+<li>object</li>
+</ul>
+<p><code>typeof</code>运算符<strong>把</strong>对象、数组或<code>null</code>返回<code>object</code>。<br><code>typeof</code>运算符<strong>不会</strong>把函数返回<code>object</code>。</p>
+<p><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">typeof &#123;name:&apos;Bill&apos;, age:62&#125; // 返回 &quot;object&quot;</span><br><span class="line">typeof [1,2,3,4]             // 返回 &quot;object&quot; </span><br><span class="line">typeof null                  // 返回 &quot;object&quot;</span><br><span class="line">typeof function myFunc()&#123;&#125;   // 返回 &quot;function&quot;</span><br></pre></td></tr></table></figure>
+
+<p><code>typeof</code>运算符把数组返回为“<code>object</code>”，因为在JS中数组即对象。</p>
+<hr>
+<h1 id="JavaScript函数"><a href="#JavaScript函数" class="headerlink" title="JavaScript函数"></a>JavaScript函数</h1><h2 id="JavaScript函数语法"><a href="#JavaScript函数语法" class="headerlink" title="JavaScript函数语法"></a>JavaScript函数语法</h2><p>通过 function 关键词进行定义，其后是函数名和括号 ()。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function name(参数 1, 参数 2, 参数 3) &#123;</span><br><span class="line">    要执行的代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;JavaScript 函数&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;本例调用函数把华氏度转换为摄氏度：&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">function toCelsius(f) &#123;</span><br><span class="line">    return (5/9) * (f-32);</span><br><span class="line">&#125;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = toCelsius(86);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="运算符调用函数"><a href="#运算符调用函数" class="headerlink" title="()运算符调用函数"></a>()运算符调用函数</h2><p>使用上面的例子，<code>toCelsius</code>引用的是函数对象，而<code>toCelsius()</code>引用的是函数结果。<br><strong>实例</strong> 访问没有（）的函数将返回函数定义：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function toCelsius(f)&#123;</span><br><span class="line">    return (5/9) * (f - 32);</span><br><span class="line">&#125;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = toCelsius;</span><br></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">function toCelsius(f) &#123; return (5/9) * (f-32); &#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="JavaScript对象-1"><a href="#JavaScript对象-1" class="headerlink" title="JavaScript对象"></a>JavaScript对象</h1><p><strong>实例</strong> 这段代码把<strong>多个值</strong>(porsche,911,white)赋给名为car的变量：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var car = &#123;type:&quot;porsche&quot;, model:&quot;911&quot;, color:&quot;white&quot;&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>值以<strong>名称：值</strong>对的方式来书写（名称和值由冒号分隔）。</p>
+<hr>
+<h2 id="对象属性"><a href="#对象属性" class="headerlink" title="对象属性"></a>对象属性</h2><p>名称:值  名称为属性，值为属性值</p>
+<hr>
+<h2 id="对象方法（不是很懂）"><a href="#对象方法（不是很懂）" class="headerlink" title="对象方法（不是很懂）"></a>对象方法（不是很懂）</h2><p>对象也可以有<strong>方法</strong>。<br>方法是在对象上执行的<strong>动作</strong>。<br>方法以<strong>函数定义</strong>被存储在属性中。<br>方法是作为属性来存储的函数。</p>
+<hr>
+<h2 id="访问对象属性"><a href="#访问对象属性" class="headerlink" title="访问对象属性"></a>访问对象属性</h2><p>有两种方式访问属性：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">objectName.propertyName</span><br></pre></td></tr></table></figure>
+
+<p>或者</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">objectName[&quot;propertyName&quot;]</span><br></pre></td></tr></table></figure>
+
+<p><strong>例子1</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">person.lastName;</span><br></pre></td></tr></table></figure>
+
+<p><strong>例子2</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">person[&quot;lastName&quot;];</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="访问对象方法"><a href="#访问对象方法" class="headerlink" title="访问对象方法"></a>访问对象方法</h2><p>此处的方法指对象中的函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">objectName.methodName()</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h1&gt;JavaScript 对象方法&lt;/h1&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;对象方法是一种函数定义，存储为属性值。&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">// 创建对象：</span><br><span class="line">var person = &#123;</span><br><span class="line">    firstName: &quot;Bill&quot;,</span><br><span class="line">    lastName : &quot;Gates&quot;,</span><br><span class="line">    id       : 12345,</span><br><span class="line">    fullName : function() &#123;</span><br><span class="line">       return this.firstName + &quot; &quot; + this.lastName;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">// 显示对象中的数据：</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = person.fullName();</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>如果<strong>不使用（）</strong>访问fullName方法，则将返回<strong>函数定义</strong>。</p>
+<hr>
+<h2 id="不要把字符串、数值和布尔值声明为对象！"><a href="#不要把字符串、数值和布尔值声明为对象！" class="headerlink" title="不要把字符串、数值和布尔值声明为对象！"></a>不要把字符串、数值和布尔值声明为对象！</h2><p>如果通过关键词”new”来声明JavaScript变量，则该变量会被创建为对象：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var x = new String();        // 把 x 声明为 String 对象</span><br><span class="line">var y = new Number();        // 把 y 声明为 Number 对象</span><br><span class="line">var z = new Boolean();       //	把 z 声明为 Boolean 对象</span><br></pre></td></tr></table></figure>
+
+<p>字符串、数值或逻辑对象会增加代码的复杂性并降低执行速度。</p>
+<hr>
+<h1 id="JavaScript事件"><a href="#JavaScript事件" class="headerlink" title="JavaScript事件"></a>JavaScript事件</h1><p>HTML事件是发生在HTML元素上的“事情”。<br>当在HTML页面中使用JavaScript时，JavaScript能够“应对”这些事件。</p>
+<hr>
+<h2 id="HTML事件"><a href="#HTML事件" class="headerlink" title="HTML事件"></a>HTML事件</h2><p>HTML事件可以是浏览器或用户做的某些事情。<br>下面是HTML事件的一些例子：</p>
+<ul>
+<li>HTML网页完成加载</li>
+<li>HTML输入字段被修改</li>
+<li>HTML按钮被点击</li>
+</ul>
+<p>JavaScript可以在事件被侦测到时执行代码。<br>使用单引号：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;element event=&apos;一些 JavaScript&apos;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>使用双引号：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;element event=&quot;一些 JavaScript&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong> <code>onclick</code>属性（以及代码）被添加到<code>&lt;button&gt;</code>元素：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onclick=&apos;document.getElementById(&quot;demo&quot;).innerHTML=Date()&apos;&gt;现在的时间是？&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
+<p>上面的例子中，JS代码改变了id=”demo”的元素的内容。<br>在下面的例子中，代码（使用<code>this.innerHTML</code>）改变了其自身元素的内容：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h1&gt;JavaScript 事件&lt;/h1&gt;</span><br><span class="line"></span><br><span class="line">&lt;button onclick=&quot;this.innerHTML=Date()&quot;&gt;时间是？&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>也就是相当于把按钮上的文本修改了。</p>
+<p>JavaScript代码通常有很多行，事件属性调用函数更为常见：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;button onclick=&quot;displayDate()&quot;&gt;时间是？&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">function displayDate() &#123;</span><br><span class="line">    document.getElementById(&quot;demo&quot;).innerHTML = Date();</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="常见的HTML事件"><a href="#常见的HTML事件" class="headerlink" title="常见的HTML事件"></a>常见的HTML事件</h2><table>
+<thead>
+<tr>
+<th align="left">事件</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">onchange</td>
+<td align="left">HTML元素已被改变</td>
+</tr>
+<tr>
+<td align="left">onclick</td>
+<td align="left">用户点击了HTML元素</td>
+</tr>
+<tr>
+<td align="left">onmouseover</td>
+<td align="left">用户把鼠标移动到HTML元素上</td>
+</tr>
+<tr>
+<td align="left">onmouseout</td>
+<td align="left">用户把鼠标移开HTML元素</td>
+</tr>
+<tr>
+<td align="left">onkeydown</td>
+<td align="left">用户按下键盘按键</td>
+</tr>
+<tr>
+<td align="left">onload</td>
+<td align="left">浏览器已经完成页面加载</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="JavaScript字符串"><a href="#JavaScript字符串" class="headerlink" title="JavaScript字符串"></a>JavaScript字符串</h1><h2 id="字符串长度"><a href="#字符串长度" class="headerlink" title="字符串长度"></a>字符串长度</h2><p>内建属性<code>length</code>可返回字符串的长度<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var txt = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;;</span><br><span class="line">var sln = txt.length;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h2><table>
+<thead>
+<tr>
+<th align="left">代码</th>
+<th align="left">结果</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">&#39;</td>
+<td align="left">‘</td>
+<td align="left">单引号</td>
+</tr>
+<tr>
+<td align="left">&quot;</td>
+<td align="left">“</td>
+<td align="left">双引号</td>
+</tr>
+<tr>
+<td align="left"><code>\\</code></td>
+<td align="left">|反斜杠</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="字符串可以是对象"><a href="#字符串可以是对象" class="headerlink" title="字符串可以是对象"></a>字符串可以是对象</h2><p>通常，JavaScript字符串是原始值，通过字面方式创建：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var firstName = &quot;Bill&quot;    //// typeof firstName 将返回 string</span><br></pre></td></tr></table></figure>
+
+<p>但是字符串也可通过关键词<code>new</code>定义为对象：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var firstName = new String(&quot;Bill&quot;)    //// typeof firstName 将返回 object</span><br></pre></td></tr></table></figure>
+
+<p>把字符串创建为对象会拖慢执行速度。<br>new 关键字使代码复杂化。也可能产生一些意想不到的结果。</p>
+<p><strong>实例</strong> 当使用 == 相等运算符时，相等字符串是相等的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var x = &quot;Bill&quot;;             </span><br><span class="line">var y = new String(&quot;Bill&quot;);</span><br><span class="line"></span><br><span class="line">// (x == y) 为 true，因为 x 和 y 的值相等</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong> 当时用<code>===</code>运算符时，这两者不相等，因为<code>===</code>运算符需要类型和值同时相等。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var x = &quot;Bill&quot;;             </span><br><span class="line">var y = new String(&quot;Bill&quot;);</span><br><span class="line"></span><br><span class="line">// (x === y) 为 false，因为 x 和 y 的类型不同（字符串与对象）</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong> 对象无法比较</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var x = new String(&quot;Bill&quot;);             </span><br><span class="line">var y = new String(&quot;Bill&quot;);</span><br><span class="line"></span><br><span class="line">// (x == y) 为 false，因为 x 和 y 是不同的对象,===也一样</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript对象无法进行对比，比较时将始终返回false。</p>
+<hr>
+<h1 id="JavaScript字符串方法"><a href="#JavaScript字符串方法" class="headerlink" title="JavaScript字符串方法"></a>JavaScript字符串方法</h1><h2 id="字符串方法和属性"><a href="#字符串方法和属性" class="headerlink" title="字符串方法和属性"></a>字符串方法和属性</h2><p>原始值，比如“Bill Gates”，没有方法和属性，因为他们不是对象。<br>但是通过JS，方法和属性也可用于原始值，因为在执行方法和属性时JS将原始值视为对象。</p>
+<hr>
+<h2 id="查找字符串中的字符串"><a href="#查找字符串中的字符串" class="headerlink" title="查找字符串中的字符串"></a>查找字符串中的字符串</h2><p><code>indexOf()</code>方法返回字符串中指定文本<strong>首次</strong>出现的索引（位置）：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var str = &quot;The full name of China is the People&apos;s Republic of China.&quot;;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = str.indexOf(&quot;China&quot;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br><code>17</code><br>JavaScript从零计算位置。<br>0是字符串中的第一个位置，1是第二个，2是第三个…<br>对于上例来说，“T”是第0个。<br><code>lastIndexOf()</code>方法返回指定文本在字符串中<strong>最后</strong>一次出现的索引：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var str = &quot;The full name of China is the People&apos;s Republic of China.&quot;;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = str.lastIndexOf(&quot;China&quot;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br><code>51</code></p>
+<p>如果未找到文本，<code>indexOf()</code>和<code>lastIndexOf()</code>均返回-1。</p>
+<p><strong>实例</strong> 两种方法都可以设置第二个参数作为检索的起始位置。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var str = &quot;The full name of China is the People&apos;s Republic of China.&quot;;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = str.indexOf(&quot;China&quot;，18);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br><code>51</code></p>
+<p><code>lastIndexOf()</code> 方法向后进行检索（从尾到头），这意味着：假如第二个参数是 50，则从位置 50 开始检索，直到字符串的起点。</p>
+<hr>
+<h2 id="检索字符串中的字符串"><a href="#检索字符串中的字符串" class="headerlink" title="检索字符串中的字符串"></a>检索字符串中的字符串</h2><p><code>search()</code>方法搜索特定值的字符串，并返回匹配的位置。<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var str = &quot;The full name of China is the People&apos;s Republic of China.&quot;;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = str.search(&quot;China&quot;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br><code>17</code></p>
+<hr>
+<h2 id="提取部分字符串"><a href="#提取部分字符串" class="headerlink" title="提取部分字符串"></a>提取部分字符串</h2><p>有三种提取部分字符串的方法：</p>
+<ul>
+<li>slice(start,end)</li>
+<li>substring(start,end)</li>
+<li>substr(start,length)</li>
+</ul>
+<hr>
+<ol>
+<li><strong>slice()方法</strong><br><code>slice()</code>提取字符串的某个部分并在新字符串中返回被提取的部分。<br>该方法设置两个参数：开始位置、结束为止</li>
+</ol>
+<p><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var str = &quot;Apple, Banana, Mango&quot;;</span><br><span class="line">var res = str.slice(7,13);</span><br></pre></td></tr></table></figure>
+
+<p>res的结果是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Banana</span><br></pre></td></tr></table></figure>
+
+<p>如果某个参数为负，则从字符串的结尾开始计数。<br>如果省略第二个参数，则将裁剪字符串的剩余部分。</p>
+<ol start="2">
+<li><strong>substring()方法</strong><br><code>substring()</code>类似于<code>slice()</code>。<br>不同之处在于<code>substring()</code>无法接受负的索引。<br>如果省略第二个参数，则该 <code>substring()</code> 将裁剪字符串的剩余部分。</li>
+<li><strong>substr()方法</strong><br><code>substr()</code> 类似于 <code>slice()</code>。<br>不同之处在于第二个参数规定被提取部分的<strong>长度</strong>。<br>如果省略第二个参数，则该 <code>substr()</code> 将裁剪字符串的剩余部分。<br>如果首个参数为负，则从字符串的结尾计算位置。<br>第二个参数不能为负，因为它定义的是长度。</li>
+</ol>
+<hr>
+<h1 id="JavaScript数字"><a href="#JavaScript数字" class="headerlink" title="JavaScript数字"></a>JavaScript数字</h1><h2 id="JavaScript数值始终是64位的浮点数"><a href="#JavaScript数值始终是64位的浮点数" class="headerlink" title="JavaScript数值始终是64位的浮点数"></a>JavaScript数值始终是64位的浮点数</h2><p>JavaScript 不会定义不同类型的数，比如整数、短的、长的、浮点的等等。<br>JavaScript 数值始终以双精度浮点数来存储，根据国际 IEEE 754 标准。<br>此格式用 64 位存储数值，其中 0 到 51 存储数字（片段），52 到 62 存储指数，63 位存储符号。</p>
+<hr>
+<h2 id="精度"><a href="#精度" class="headerlink" title="精度"></a>精度</h2><ul>
+<li>整数（不使用指数或科学计数法）会被精确到15位。</li>
+<li>小数的最大数是 17 位，但是浮点的算数并不总是 100% 精准：</li>
+</ul>
+<hr>
+<h2 id="数字字符串"><a href="#数字字符串" class="headerlink" title="数字字符串"></a>数字字符串</h2><p>在所有数字运算中，JS会尝试将字符串转换为数字，<strong>除了“+”</strong><br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var x = &quot;100&quot;;</span><br><span class="line">var y = &quot;10&quot;;</span><br><span class="line">var z = x / y;       // z 将是 10</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var x = &quot;100&quot;;</span><br><span class="line">var y = &quot;10&quot;;</span><br><span class="line">var z = x - y;       // z 将是 90</span><br></pre></td></tr></table></figure>
+
+<p>但是该例不会如此运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var x = &quot;100&quot;;</span><br><span class="line">var y = &quot;10&quot;;</span><br><span class="line">var z = x + y;       // z 不会是 110（而是 10010）</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript 用 + 运算符对字符串进行了级联。</p>
+<hr>
+<h2 id="NaN-非数值"><a href="#NaN-非数值" class="headerlink" title="NaN - 非数值"></a>NaN - 非数值</h2><p><code>NaN</code> 属于 JavaScript 保留词，指示某个数不是合法数。<br>使用全局 JavaScript 函数 <code>isNaN()</code> 可以确定某个值是否是数<br><code>NaN</code> 是数，<code>typeof NaN</code> 返回 <code>number</code>。</p>
+<hr>
+<h2 id="Infinity"><a href="#Infinity" class="headerlink" title="Infinity"></a>Infinity</h2><p><code>Infinity</code> （或 <code>-Infinity</code>）是 JavaScript 在计算数时超出最大可能数范围时返回的值。<br>除以 0（零）也会生成 <code>Infinity</code>。<br><code>Infinity</code> 是数：<code>typeOf Infinity</code> 返回 <code>number</code>。</p>
+<hr>
+<h2 id="十六进制"><a href="#十六进制" class="headerlink" title="十六进制"></a>十六进制</h2><p>JavaScript会把前缀为<code>0x</code>的数值常量解释为十六进制。<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var x = 0xFF;             // x 将是 255</span><br></pre></td></tr></table></figure>
+
+<p>绝不要用前导零写数字（比如07）。<br>可以使用<code>toStrinig()</code>方法把数输出为十六进制、八进制或二进制。<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var myNumber = 128;</span><br><span class="line">myNumber.toString(16);     // 返回 80</span><br><span class="line">myNumber.toString(8);      // 返回 200</span><br><span class="line">myNumber.toString(2);      // 返回 10000000</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="数值可以是对象"><a href="#数值可以是对象" class="headerlink" title="数值可以是对象"></a>数值可以是对象</h2><p>通常 JavaScript 数值是通过字面量创建的原始值：var x = 123<br>但是也可以通过关键词 new 定义为对象：var y = new Number(123)<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var x = 123;</span><br><span class="line">var y = new Number(123);</span><br><span class="line"></span><br><span class="line">// typeof x 返回 number</span><br><span class="line">// typeof y 返回 object</span><br></pre></td></tr></table></figure>
+
+<p>不要创建数值对象。这样会拖慢执行速度。<br>new 关键词使代码复杂化，并产生某些无法预料的结果：<br>当使用 == 相等运算符时，相等的数看上去相等。<br>当使用 === 相等运算符后，相等的数变为不相等，因为 === 运算符需要类型和值同时相等。<br>JavaScript 对象无法进行比较。</p>
+<hr>
+<h1 id="JavaScript数值方法"><a href="#JavaScript数值方法" class="headerlink" title="JavaScript数值方法"></a>JavaScript数值方法</h1><h2 id="toFixed-方法"><a href="#toFixed-方法" class="headerlink" title="toFixed()方法"></a>toFixed()方法</h2><p><code>toFixed(</code>)` 返回字符串值，它包含了指定位数小数的数字<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var x = 9.656;</span><br><span class="line">x.toFixed(0);           // 返回 10</span><br><span class="line">x.toFixed(2);           // 返回 9.66</span><br><span class="line">x.toFixed(4);           // 返回 9.6560</span><br><span class="line">x.toFixed(6);           // 返回 9.656000</span><br></pre></td></tr></table></figure>
+
+<p><code>toFixed(2)</code> 非常适合处理金钱。</p>
+<hr>
+<h2 id="toPrecision-方法"><a href="#toPrecision-方法" class="headerlink" title="toPrecision()方法"></a>toPrecision()方法</h2><p>toPrecision() 返回字符串值，它包含了指定长度的数字。<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var x = 9.656;</span><br><span class="line">x.toPrecision();        // 返回 9.656</span><br><span class="line">x.toPrecision(2);       // 返回 9.7</span><br><span class="line">x.toPrecision(4);       // 返回 9.656</span><br><span class="line">x.toPrecision(6);       // 返回 9.65600</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="把变量转换为数值"><a href="#把变量转换为数值" class="headerlink" title="把变量转换为数值"></a>把变量转换为数值</h2><p>这三种 JavaScript 方法可用于将变量转换为数字：</p>
+<ul>
+<li>Number() 方法</li>
+<li>parseInt() 方法</li>
+<li>parseFloat() 方法<br>这些方法并非数字方法，而是全局 JavaScript 方法。</li>
+</ul>
+<hr>
+<p><strong>全局方法</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">方法</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Number()</td>
+<td align="left">返回数字，由其参数转换而来。</td>
+</tr>
+<tr>
+<td align="left">parseFloat()</td>
+<td align="left">解析其参数并返回浮点数。</td>
+</tr>
+<tr>
+<td align="left">parseInt()</td>
+<td align="left">解析其参数并返回整数。</td>
+</tr>
+</tbody></table>
+<hr>
+<ol>
+<li><strong>Number()方法</strong><br><code>Number()</code>可用于把JS变量转换为数值。</li>
+</ol>
+<p><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">x = true;</span><br><span class="line">Number(x);        // 返回 1</span><br><span class="line">x = false;     </span><br><span class="line">Number(x);        // 返回 0</span><br><span class="line">x = new Date();</span><br><span class="line">Number(x);        // 返回 1404568027739</span><br><span class="line">x = &quot;10&quot;</span><br><span class="line">Number(x);        // 返回 10</span><br><span class="line">x = &quot;10 20&quot;</span><br><span class="line">Number(x);        // 返回 NaN</span><br></pre></td></tr></table></figure>
+
+<p>如果无法转换数字，则返回 <code>NaN</code>。</p>
+<hr>
+<p><strong>用于日期的Number()方法</strong><br><code>Number()</code> 还可以把日期转换为数字。<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Number(new Date(&quot;2019-04-15&quot;));    //返回 1506729600000</span><br></pre></td></tr></table></figure>
+
+<p>上面的 <code>Number()</code> 方法返回 1970 年 1 月 1 日至今的毫秒数。</p>
+<hr>
+<ol start="2">
+<li><strong>parseInt()方法</strong><br><code>parseInt()</code> 解析一段字符串并返回数值。允许空格。只返回首个数字。</li>
+</ol>
+<p><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">parseInt(&quot;10&quot;);         // 返回 10</span><br><span class="line">parseInt(&quot;10.33&quot;);      // 返回 10</span><br><span class="line">parseInt(&quot;10 20 30&quot;);   // 返回 10</span><br><span class="line">parseInt(&quot;10 years&quot;);   // 返回 10</span><br><span class="line">parseInt(&quot;years 10&quot;);   // 返回 NaN</span><br></pre></td></tr></table></figure>
+
+<p>只要不是数字开头，就会返回NaN。</p>
+<hr>
+<ol start="3">
+<li><strong>parseFloat()方法</strong><br>parseFloat() 解析一段字符串并返回数值。允许空格。只返回首个数字。</li>
+</ol>
+<p><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">parseFloat(&quot;10&quot;);        // 返回 10</span><br><span class="line">parseFloat(&quot;10.33&quot;);     // 返回 10.33</span><br><span class="line">parseFloat(&quot;10 20 30&quot;);  // 返回 10</span><br><span class="line">parseFloat(&quot;10 years&quot;);  // 返回 10</span><br><span class="line">parseFloat(&quot;years 10&quot;);  // 返回 NaN</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="JavaScript数组-1"><a href="#JavaScript数组-1" class="headerlink" title="JavaScript数组"></a>JavaScript数组</h1><p>JavaScript 数组用于在单一变量中存储多个值。<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var cars = [&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用JavaScript关键词new"><a href="#使用JavaScript关键词new" class="headerlink" title="使用JavaScript关键词new"></a>使用JavaScript关键词new</h2><p><strong>实例</strong> 下面的例子也会创建数组，并为其赋值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var cars = new Array(&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="访问完整数组"><a href="#访问完整数组" class="headerlink" title="访问完整数组"></a>访问完整数组</h2><p>可以通过数组名来访问完整数组<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var cars = [&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = cars;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br><code>Saab,Volvo,BMW</code></p>
+<hr>
+<h2 id="数组元素可以是对象"><a href="#数组元素可以是对象" class="headerlink" title="数组元素可以是对象"></a>数组元素可以是对象</h2><p>JavaScript 变量可以是对象。数组是特殊类型的对象。<br>所以可以在相同数组中存放不同类型的变量。<br>在数组保存对象。在数组中保存函数。甚至可以在数组中保存数组。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">myArray[0] = Date.now;</span><br><span class="line">myArray[1] = myFunction;</span><br><span class="line">myArray[2] = myCars;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="length属性"><a href="#length属性" class="headerlink" title="length属性"></a>length属性</h2><p>返回数组的长度（元素的数目）<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">fruits.length;                       // fruits 的长度是 4</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="遍历数组元素"><a href="#遍历数组元素" class="headerlink" title="遍历数组元素"></a>遍历数组元素</h2><p>遍历数组的最安全方法是使用“for”循环<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var fruits, text, fLen, i;</span><br><span class="line">fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">fLen = fruits.length;</span><br><span class="line"></span><br><span class="line">text = &quot;&lt;ul&gt;&quot;;</span><br><span class="line">for (i = 0; i &lt; fLen; i++) &#123;</span><br><span class="line">  text += &quot;&lt;li&gt;&quot; + fruits[i] + &quot;&lt;/li&gt;&quot;;</span><br><span class="line">&#125;</span><br><span class="line">text += &quot;&lt;/ul&gt;&quot;;</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = text;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<ul>
+<li>Banana</li>
+<li>Orange</li>
+<li>Apple</li>
+<li>Mango</li>
+</ul>
+<hr>
+<h2 id="添加数组元素"><a href="#添加数组元素" class="headerlink" title="添加数组元素"></a>添加数组元素</h2><p><strong>实例</strong> 使用<code>push()</code>方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">fruits.push(&quot;Lemon&quot;);                // 向 fruits 添加一个新元素 (Lemon)</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong> 也可以使用<code>length</code>属性向数组添加新元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">fruits[fruits.length] = &quot;Lemon&quot;;     // 向 fruits 添加一个新元素 (Lemon)</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong> 添加最高索引的元素可在数组中创建为定义的“洞”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var fruits, text, fLen, i;</span><br><span class="line">fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">fruits[6] = &quot;Lemon&quot;;</span><br><span class="line"></span><br><span class="line">fLen = fruits.length;</span><br><span class="line">text = &quot;&quot;;</span><br><span class="line">for (i = 0; i &lt; fLen; i++) &#123;</span><br><span class="line">  text += fruits[i] + &quot;&lt;br&gt;&quot;;</span><br><span class="line">&#125;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = text;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Banana</span><br><span class="line">Orange</span><br><span class="line">Apple</span><br><span class="line">Mango</span><br><span class="line">undefined</span><br><span class="line">undefined</span><br><span class="line">Lemon</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="数组和对象的区别"><a href="#数组和对象的区别" class="headerlink" title="数组和对象的区别"></a>数组和对象的区别</h2><p>在JavaScript中，<strong>数组</strong>使用<strong>数字索引</strong>。<br>在JavaScript中，<strong>对象</strong>使用<strong>命名索引</strong>。</p>
+<hr>
+<h2 id="如何识别数组"><a href="#如何识别数组" class="headerlink" title="如何识别数组"></a>如何识别数组</h2><p><strong>解决方案1：</strong><br>使用<code>Array.isArray()</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Array.isArray(fruits);    //返回true</span><br></pre></td></tr></table></figure>
+
+<p><strong>解决方案2：</strong><br>创建自己的<code>isArray()</code>函数以解决此问题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function isArray(x)&#123;</span><br><span class="line">    return x.constructor.toString().indexOf(&quot;Array&quot;) &gt; -1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>假如对象原型包含单词 “Array” 则返回 true。<br><strong>解决方案3：</strong><br>假如对象由给定的构造器创建，则 <code>instanceof</code> 运算符返回 true</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">fruits instanceof Array     // 返回 true</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="JavaScript数组方法"><a href="#JavaScript数组方法" class="headerlink" title="JavaScript数组方法"></a>JavaScript数组方法</h1><h2 id="把数组转换为字符串"><a href="#把数组转换为字符串" class="headerlink" title="把数组转换为字符串"></a>把数组转换为字符串</h2><p><strong>实例</strong> 使用<code>toString()</code>(逗号分隔)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = fruits.toString();</span><br></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Banana,Orange,Apple,Mango</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong> <code>join()</code>方法也可将所有数组元素结合为一个字符串，还可以规定分隔符。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var fruit = [&quot;Banana&quot;, &quot;Orange&quot;,&quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = fruits.join(&quot; * &quot;);</span><br></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Banana * Orange * Apple * Mango</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Popping"><a href="#Popping" class="headerlink" title="Popping"></a>Popping</h2><p><code>pop()</code>方法从数组中删除最后一个元素，返回“被弹出”的值<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">var x = fruits.pop();      // 从 fruits 删除最后一个元素（&quot;Mango&quot;）,并且 x 的值是 &quot;Mango&quot;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Pushing"><a href="#Pushing" class="headerlink" title="Pushing"></a>Pushing</h2><p><code>push()</code>方法（在数组结尾处）向数组添加一个新的元素，返回新数组的长度。<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">var x =  fruits.push(&quot;Kiwi&quot;);   //  向 fruits 添加一个新元素，并且 x 的值是 5</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h2><p><code>sort()</code>方法以字母顺序对数组进行排序<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</span><br><span class="line">fruits.sort();            // 对 fruits 中的元素进行排序</span><br></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Apple,Banana,Mango,Orange</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="反转数组"><a href="#反转数组" class="headerlink" title="反转数组"></a>反转数组</h2><p><code>reverse()</code>方法翻转数组中的元素。</p>
+<hr>
+<p>## </p>
 
       
 
