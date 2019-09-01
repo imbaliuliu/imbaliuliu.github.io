@@ -140,6 +140,121 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-JavaScript基础（上）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/01/JavaScript基础（上）/">JavaScript基础（上）</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/01/JavaScript基础（上）/" class="archive-article-date">
+  	<time datetime="2019-09-01T00:04:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="JavaScript简介"><a href="#JavaScript简介" class="headerlink" title="JavaScript简介"></a>JavaScript简介</h1><h2 id="JavaScript能够改变HTML内容"><a href="#JavaScript能够改变HTML内容" class="headerlink" title="JavaScript能够改变HTML内容"></a>JavaScript能够改变HTML内容</h2><p><code>getElementById()</code>十多个JavaScript HTML方法之一。<br>本例使用该方法来”查找” id=”demo”的HTML元素，并把元素内容(<code>innerHTML</code>)更改为”Hello JavaScript”<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&quot;demo&quot;).innerHTML=&quot;Hello JavaScript&quot;;</span><br></pre></td></tr></table></figure>
+
+<p>注释：JavaScript同时接受双引号和单引号。<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&quot;demo&quot;).innerHTML=&apos;Hello JavaScript&apos;;</span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;JavaScript 能够改变 HTML 内容。&lt;/p&gt;</span><br><span class="line">&lt;button type=&quot;button&quot; onclick=&apos;document.getElementById(&quot;demo&quot;).innerHTML = &quot;Hello JavaScript!&quot;&apos;&gt;点击我！&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong></p>
+<body>
+<p id="demo">JavaScript 能够改变 HTML 内容。</p>
+<button type="button" onclick="document.getElementById("demo").innerHTML = "Hello JavaScript!"">点击我！</button>
+</body>
+
+<hr>
+<h2 id="JavaScript能够改变HTML属性"><a href="#JavaScript能够改变HTML属性" class="headerlink" title="JavaScript能够改变HTML属性"></a>JavaScript能够改变HTML属性</h2><h2 id="JavaScript能够改变HTML样式-CSS"><a href="#JavaScript能够改变HTML样式-CSS" class="headerlink" title="JavaScript能够改变HTML样式(CSS)"></a>JavaScript能够改变HTML样式(CSS)</h2><p>改变HTML元素的样式，是改变HTML属性的一种变种：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&quot;demo&quot;).style.fontSize=&quot;25px&quot;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;JavaScript 能够改变 HTML 元素的样式。&lt;/p&gt;</span><br><span class="line">&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).style.fontSize=&apos;35px&apos;&quot;&gt;</span><br><span class="line">点击我！</span><br><span class="line">&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong></p>
+<body>
+<p id="demo">JavaScript 能够改变 HTML 元素的样式。</p>
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">
+点击我！
+</button>
+</body>
+
+<hr>
+<h2 id="JavaScript能够隐藏HTML元素"><a href="#JavaScript能够隐藏HTML元素" class="headerlink" title="JavaScript能够隐藏HTML元素"></a>JavaScript能够隐藏HTML元素</h2><p>可通过改变<code>display</code>样式来隐藏HTML元素：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">document,getElementById(&quot;demo&quot;).style.display=&quot;none&quot;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;JavaScript 能够隐藏 HTML 元素。&lt;/p&gt;</span><br><span class="line">&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).style.display=&apos;none&apos;&quot;&gt;</span><br><span class="line">点击我！</span><br><span class="line">&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong></p>
+<body>
+<p id="demo">JavaScript 能够隐藏 HTML 元素。</p>
+<button type="button" onclick="document.getElementById('demo').style.display='none'">
+点击我！
+</button>
+</body>
+
+<hr>
+<h2 id="JavaScript能够显示HTML元素"><a href="#JavaScript能够显示HTML元素" class="headerlink" title="JavaScript能够显示HTML元素"></a>JavaScript能够显示HTML元素</h2><p>可通过改变<code>display</code>样式来显示隐藏的HTML元素：<br><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&quot;demo&quot;).style.display=&quot;block&quot;;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong><br><!DOCTYPE html></p>
+<html>
+<body>
+
+<p>JavaScript 能够显示隐藏的 HTML 元素。</p>
+
+<p id="demo" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">
+点击我！
+</button>
+
+</body>
+</html>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/01/JavaScript基础（上）/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-HTML基础（下）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -306,6 +421,7 @@
   <td>Row</td>
 </tr>
 </table>
+注释：可能显示不出来粗细。
 
 <h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>表格由<code>&lt;table&gt;</code>标签来定义。每个表格均有若干行（由<code>&lt;tr&gt;</code>标签定义），每行被分割为若干单元格（由<code>&lt;td&gt;</code>标签定义）。字母td指表格数据（table data），即数据单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;table border=&quot;1&quot;&gt;</span><br><span class="line">&lt;tr&gt;</span><br><span class="line">&lt;td&gt;row 1,cell 1&lt;/td&gt;</span><br><span class="line">&lt;td&gt;row 1,cell 2&lt;/td&gt;</span><br><span class="line">&lt;/tr&gt;</span><br><span class="line">&lt;tr&gt;</span><br><span class="line">&lt;td&gt;...&lt;/td&gt;</span><br><span class="line">....</span><br><span class="line">....</span><br><span class="line">&lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
@@ -695,7 +811,7 @@
 <hr>
 <h1 id="HTML-URL"><a href="#HTML-URL" class="headerlink" title="HTML URL"></a>HTML URL</h1><p>URL（统一资源定位器）也被称为网址。</p>
 <hr>
-<h2 id="URL-Uniform-Resource-Locator"><a href="#URL-Uniform-Resource-Locator" class="headerlink" title="URL-Uniform Resource Locator"></a>URL-Uniform Resource Locator</h2><p>统一资源定位器（URL）用于定位万维网上的文档（或其他数据）。<br>网址，比如<a href="http://www.w3school.com.cn/html/index.asp，遵守以下的语法规则：" target="_blank" rel="noopener">http://www.w3school.com.cn/html/index.asp，遵守以下的语法规则：</a></p>
+<h2 id="URL-Uniform-Resource-Locator"><a href="#URL-Uniform-Resource-Locator" class="headerlink" title="URL-Uniform Resource Locator"></a>URL-Uniform Resource Locator</h2><p>统一资源定位器（URL）用于定位万维网上的文档（或其他数据）。<br>网址，比如<a href="http://www.w3school.com.cn/html/index.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/html/index.asp</a>  ，遵守以下的语法规则：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scheme://host.domain:port/path/filename</span><br></pre></td></tr></table></figure>
 
 <p>解释：</p>
