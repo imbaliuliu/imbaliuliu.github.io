@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>JavaScript基础（下） | LLLOG</title>
+  <title>HTML DOM | LLLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="JavaScript日期创建Date对象Date对象由新的Date()构造函数创建。有4种方法创建新的日期对象：  new Date() new Date(year,month,day,hours,minutes,seconds,milliseconds) new Date(milliseconds) new Date(date string)   new Date()new Date()用当前日">
+  <meta name="description" content="DOM简介HTML DOM（文档对象模型）当网页被加载时，浏览器会创建页面的文档对象模型。 什么是DOM？DOM是一项W3C标准。DOM定义了访问文档的标准：DOM是中立于平台和语言的接口，它允许程序和脚本动态地访问、更新文档的内容、结构和样式。W3C DOM标准被分为3个不同的部分：  Core DOM - 所有文档类型的标准模型 XML DOM - XML文档的标准模型 HTML DOM -">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript基础（下）">
-<meta property="og:url" content="http://yoursite.com/2019/09/01/JavaScript基础（下）/index.html">
+<meta property="og:title" content="HTML DOM">
+<meta property="og:url" content="http://yoursite.com/2019/09/03/HTML-DOM/index.html">
 <meta property="og:site_name" content="LLLOG">
-<meta property="og:description" content="JavaScript日期创建Date对象Date对象由新的Date()构造函数创建。有4种方法创建新的日期对象：  new Date() new Date(year,month,day,hours,minutes,seconds,milliseconds) new Date(milliseconds) new Date(date string)   new Date()new Date()用当前日">
+<meta property="og:description" content="DOM简介HTML DOM（文档对象模型）当网页被加载时，浏览器会创建页面的文档对象模型。 什么是DOM？DOM是一项W3C标准。DOM定义了访问文档的标准：DOM是中立于平台和语言的接口，它允许程序和脚本动态地访问、更新文档的内容、结构和样式。W3C DOM标准被分为3个不同的部分：  Core DOM - 所有文档类型的标准模型 XML DOM - XML文档的标准模型 HTML DOM -">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-02T14:48:43.979Z">
+<meta property="og:updated_time" content="2019-09-03T12:37:11.556Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript基础（下）">
-<meta name="twitter:description" content="JavaScript日期创建Date对象Date对象由新的Date()构造函数创建。有4种方法创建新的日期对象：  new Date() new Date(year,month,day,hours,minutes,seconds,milliseconds) new Date(milliseconds) new Date(date string)   new Date()new Date()用当前日">
+<meta name="twitter:title" content="HTML DOM">
+<meta name="twitter:description" content="DOM简介HTML DOM（文档对象模型）当网页被加载时，浏览器会创建页面的文档对象模型。 什么是DOM？DOM是一项W3C标准。DOM定义了访问文档的标准：DOM是中立于平台和语言的接口，它允许程序和脚本动态地访问、更新文档的内容、结构和样式。W3C DOM标准被分为3个不同的部分：  Core DOM - 所有文档类型的标准模型 XML DOM - XML文档的标准模型 HTML DOM -">
   
     <link rel="alternative" href="/atom.xml" title="LLLOG" type="application/atom+xml">
   
@@ -142,131 +142,50 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-JavaScript基础（下）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-HTML-DOM" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      JavaScript基础（下）
+      HTML DOM
     </h1>
   
 
         
-        <a href="/2019/09/01/JavaScript基础（下）/" class="archive-article-date">
-  	<time datetime="2019-09-01T12:53:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-01</time>
+        <a href="/2019/09/03/HTML-DOM/" class="archive-article-date">
+  	<time datetime="2019-09-03T12:17:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="JavaScript日期"><a href="#JavaScript日期" class="headerlink" title="JavaScript日期"></a>JavaScript日期</h1><h2 id="创建Date对象"><a href="#创建Date对象" class="headerlink" title="创建Date对象"></a>创建Date对象</h2><p>Date对象由新的<code>Date()</code>构造函数创建。<br>有4种方法创建新的日期对象：</p>
+        <h1 id="DOM简介"><a href="#DOM简介" class="headerlink" title="DOM简介"></a>DOM简介</h1><h2 id="HTML-DOM（文档对象模型）"><a href="#HTML-DOM（文档对象模型）" class="headerlink" title="HTML DOM（文档对象模型）"></a>HTML DOM（文档对象模型）</h2><p>当网页被加载时，浏览器会创建页面的文档对象模型。</p>
+<h2 id="什么是DOM？"><a href="#什么是DOM？" class="headerlink" title="什么是DOM？"></a>什么是DOM？</h2><p>DOM是一项W3C标准。<br>DOM定义了访问文档的标准：<br>DOM是中立于平台和语言的接口，它允许程序和脚本动态地访问、更新文档的内容、结构和样式。<br>W3C DOM标准被分为3个不同的部分：</p>
 <ul>
-<li>new Date()</li>
-<li>new Date(year,month,day,hours,minutes,seconds,milliseconds)</li>
-<li>new Date(milliseconds)</li>
-<li>new Date(date string)</li>
+<li>Core DOM - 所有文档类型的标准模型</li>
+<li>XML DOM - XML文档的标准模型</li>
+<li>HTML DOM - HTML文档的标准模型</li>
 </ul>
 <hr>
-<h2 id="new-Date"><a href="#new-Date" class="headerlink" title="new Date()"></a>new Date()</h2><p><code>new Date()</code>用当前日期和时间创建新的日期对象：<br><strong>实例</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var d = new Date();</span><br></pre></td></tr></table></figure>
-
+<h2 id="什么是HTML-DOM？"><a href="#什么是HTML-DOM？" class="headerlink" title="什么是HTML DOM？"></a>什么是HTML DOM？</h2><p>HTML DOM是HTML的标准对象模型和编程接口。它定义了：</p>
+<ul>
+<li>作为<strong>对象</strong>的HTML元素</li>
+<li>所有HTML元素的<strong>属性</strong></li>
+<li>访问所有HTML元素的<strong>方法</strong></li>
+<li>所有HTML元素的<strong>事件</strong></li>
+</ul>
+<p><strong>HTML DOM是关于如何获取、更改、添加或删除HTML元素的标准。</strong></p>
 <hr>
-<h2 id="new-Date-year-month-…"><a href="#new-Date-year-month-…" class="headerlink" title="new Date(year,month,…)"></a>new Date(year,month,…)</h2><p>用指定日期和时间创建新的日期对象。<br>7个数字分别指定年、月、日、小时、分钟、秒和毫秒（按此顺序）<br><strong>实例</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var d = new Date(2018, 11, 24, 10, 33, 30, 0);</span><br></pre></td></tr></table></figure>
-
-<p><strong>注释</strong> JavaScript从0到11计算月份<br>一月是0，十二月是11。<br>可以省略 日、小时、分钟、秒和毫秒（按此顺序）。<br>不能省略月份。如果只提供一个参数，则将其视为毫秒。</p>
+<h1 id="HTML-DOM方法"><a href="#HTML-DOM方法" class="headerlink" title="HTML DOM方法"></a>HTML DOM方法</h1><p>HTML DOM方法是能够（在HTML元素上）执行的<strong>动作</strong><br>HTML DOM属性时能够设置或改变的HTML元素的<strong>值</strong>。</p>
 <hr>
-<h2 id="上个世纪"><a href="#上个世纪" class="headerlink" title="上个世纪"></a>上个世纪</h2><p>一位和两位数年份将被解释为19xx年。<br><strong>实例</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var d = new Date(99,11,24);</span><br></pre></td></tr></table></figure>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = &quot;Hello World!&quot;;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
+<p>在上面的例子中，<code>getElementById</code>是<strong>方法</strong>，而<code>innerHTML</code>是<strong>属性</strong>。</p>
 <hr>
-<h2 id="new-Date-dataString"><a href="#new-Date-dataString" class="headerlink" title="new Date(dataString)"></a>new Date(dataString)</h2><p><code>new Date(dataString)</code>从日期字符串创建一个新的日起对象<br><strong>实例</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var d = new Date(&quot;October 13, 2014 11:13:00&quot;);</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="JavaScript-Switch语句"><a href="#JavaScript-Switch语句" class="headerlink" title="JavaScript Switch语句"></a>JavaScript Switch语句</h2><p><strong>实例</strong><br>getDay()方法返回0至6之间的周名数字<br>（Sunday=0,Monday=1,…）<br>本例使用周名数字来计算周的名称</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">switch(new Date().getDay())</span><br><span class="line">&#123;</span><br><span class="line">    case 0:</span><br><span class="line">        day = &quot;星期天&quot;;</span><br><span class="line">        break;</span><br><span class="line">    case 1:</span><br><span class="line">        day = &quot;星期一&quot;;</span><br><span class="line">        break;</span><br><span class="line">    case 2:</span><br><span class="line">        day = &quot;星期二&quot;;</span><br><span class="line">        break;</span><br><span class="line">    case 3:</span><br><span class="line">        day = &quot;星期三&quot;;</span><br><span class="line">        break;</span><br><span class="line">    case 4:</span><br><span class="line">        day = &quot;星期四&quot;;</span><br><span class="line">        break;</span><br><span class="line">    case 5:</span><br><span class="line">        day = &quot;星期五&quot;;</span><br><span class="line">        break;</span><br><span class="line">    case 6:</span><br><span class="line">        day = &quot;星期六&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id="JavaScript-For循环"><a href="#JavaScript-For循环" class="headerlink" title="JavaScript For循环"></a>JavaScript For循环</h1><h2 id="JavaScript循环"><a href="#JavaScript循环" class="headerlink" title="JavaScript循环"></a>JavaScript循环</h2><p>通常我们会遇到使用数组的例子<br>不需要这样写：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">text += cars[0] + &quot;&lt;br&gt;&quot;;</span><br><span class="line">text += cars[1] + &quot;&lt;br&gt;&quot;; </span><br><span class="line">text += cars[2] + &quot;&lt;br&gt;&quot;; </span><br><span class="line">text += cars[3] + &quot;&lt;br&gt;&quot;; </span><br><span class="line">text += cars[4] + &quot;&lt;br&gt;&quot;; </span><br><span class="line">text += cars[5] + &quot;&lt;br&gt;&quot;;</span><br></pre></td></tr></table></figure>
-
-<p>可以这样写：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for (i = 0; i &lt; cars.length; i++) &#123; </span><br><span class="line">    text += cars[i] + &quot;&lt;br&gt;&quot;;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="For-In-循环"><a href="#For-In-循环" class="headerlink" title="For/In 循环"></a>For/In 循环</h2><p>JavaScript <code>for/in</code>语句遍历对象的属性：<br><strong>实例</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var person = &#123;fname:&quot;Bill&quot;, lname:&quot;Gates&quot;, age:62&#125;; </span><br><span class="line"></span><br><span class="line">var text = &quot;&quot;;</span><br><span class="line">var x;</span><br><span class="line">for (x in person)&#123;</span><br><span class="line">    text += person[x];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var txt = &quot;&quot;;</span><br><span class="line">var person = &#123;fname:&quot;Bill&quot;, lname:&quot;Gates&quot;, age:62&#125;; </span><br><span class="line">var x;</span><br><span class="line">for (x in person) &#123;</span><br><span class="line">  txt += person[x] + &quot; &quot;;</span><br><span class="line">&#125;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = txt;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id="JavaScript-While循环"><a href="#JavaScript-While循环" class="headerlink" title="JavaScript While循环"></a>JavaScript While循环</h1><p><strong>实例</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var cars = [&quot;BMW&quot;, &quot;Volvo&quot;, &quot;porsche&quot;, &quot;Ford&quot;];</span><br><span class="line">var i = 0;</span><br><span class="line">var text = &quot;&quot;;</span><br><span class="line">while (cars[i]) &#123;</span><br><span class="line">  text += cars[i] + &quot;&lt;br&gt;&quot;;</span><br><span class="line">  i++;</span><br><span class="line">&#125;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = text;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id="JavaScript正则表达式"><a href="#JavaScript正则表达式" class="headerlink" title="JavaScript正则表达式"></a>JavaScript正则表达式</h1><p>正则表达式是构成搜索模式的字符序列。<br>该搜索模式可用于文本搜索和文本替换操作。</p>
-<hr>
-<h2 id="什么是正则表达式？"><a href="#什么是正则表达式？" class="headerlink" title="什么是正则表达式？"></a>什么是正则表达式？</h2><p>正则表达式是构成<strong>搜索模式（search pattern）</strong>的字符序列。<br>当搜索文本中的数据时，可使用搜索模式来描述搜索内容。<br>正则表达式可以是单字符，或者更复杂的模式。<br>正则表达式可用于执行所有类型的<strong>文本搜索</strong>和<strong>文本替换</strong>操作。<br><strong>语法</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/pattern/modifiers;</span><br></pre></td></tr></table></figure>
-
-<p><strong>实例</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var patt = /w3school/i;</span><br></pre></td></tr></table></figure>
-
-<p><strong>解释</strong><br><code>/w3school/i</code>是一个正则表达式。<br><code>w3school</code>是模式（pattern）（在搜索中使用）。<br><code>i</code>是修饰符（把搜索修改为大小写不敏感）。</p>
-<hr>
-<h2 id="使用字符串方法"><a href="#使用字符串方法" class="headerlink" title="使用字符串方法"></a>使用字符串方法</h2><p>在JavaScript中，正则表达式常用于两个<strong>字符串方法</strong>：<code>search()</code>和<code>replace()</code>。<br><code>search()方法</code>使用表达式来搜索匹配，然后返回匹配的位置。<br><code>replace()方法</code>返回模式被替换处修改后的字符串。</p>
-<hr>
-<h2 id="使用字符串方法search-来处理字符串"><a href="#使用字符串方法search-来处理字符串" class="headerlink" title="使用字符串方法search()来处理字符串"></a>使用字符串方法<code>search()</code>来处理字符串</h2><p><code>search()</code>方法也接受字符串作为搜索参数。字符串参数将被转换为正则表达式：<br><strong>实例</strong><br>使用字符串来执行对“W3school”的搜索：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var str = &quot;Visit W3school!&quot;;</span><br><span class="line">var n = str.search(&quot;W3school&quot;);</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="正则表达式修饰符"><a href="#正则表达式修饰符" class="headerlink" title="正则表达式修饰符"></a>正则表达式修饰符</h2><p><strong>修饰符</strong>可用于大小写不敏感的更全局的搜索：</p>
-<table>
-<thead>
-<tr>
-<th align="left">修饰符</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">i</td>
-<td align="left">执行对大小写不敏感的匹配。</td>
-</tr>
-<tr>
-<td align="left">g</td>
-<td align="left">执行全局匹配（查找所有匹配而非在找到第一个匹配后停止。）</td>
-</tr>
-<tr>
-<td align="left">m</td>
-<td align="left">执行多行匹配。</td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="正则表达式模式"><a href="#正则表达式模式" class="headerlink" title="正则表达式模式"></a>正则表达式模式</h2><p><strong>括号</strong>用于查找一定范围的字符串。<br>表达式|描述<br>:-|:-<br>[abc]|查找方括号之间的任何字符。<br>[0-9]|查找任何从0至9的数字。<br><code>(x|y)</code>|查找由<code>|</code>分隔的任何选项。</p>
-<p><strong>元字符（Metacharacter）</strong>是拥有特殊含义的字符：<br>元字符|描述<br>:-|:-<br>\d|查找数字。<br>\s|查找空白字符。<br>\b|匹配单词边界。<br>\uxxxx|查找以十六进制数xxxx规定的Unicode字符。</p>
-<p><strong>Quantifiers</strong>定义量词：<br>量词|描述<br>:-|:-<br>n+|匹配任何包含至少一个n的字符串。<br>n*|匹配任何包含零个或多个n的字符串。<br>n?|匹配任何包含零个或一个n的字符串。</p>
-<hr>
-<h2 id="使用RegExp对象"><a href="#使用RegExp对象" class="headerlink" title="使用RegExp对象"></a>使用RegExp对象</h2><p>在JavaScript中，RegExp对象是带有预定义属性和方法的正则表达式对象。</p>
-<hr>
-<h2 id="使用test"><a href="#使用test" class="headerlink" title="使用test()"></a>使用test()</h2><p><code>test()</code>是一个正则表达式方法。<br>它通过模式来搜索字符串，然后根据结果返回true或false。<br>下面的例子搜索字符串中的字符“e”：<br><strong>实例</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var patt = /e/;</span><br><span class="line">patt.test(&quot;The best things in life are free!&quot;);</span><br></pre></td></tr></table></figure>
-
-<p>由于字符串中有一个“e”，以上代码的输出将是：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">true</span><br></pre></td></tr></table></figure>
-
-<p>不用先把正则表达式放入变量中，上面的两行可缩短为一行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/e/.test(&quot;The best things in life are free!&quot;);</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="使用exec"><a href="#使用exec" class="headerlink" title="使用exec()"></a>使用exec()</h2><p><code>exec()</code>方法是一个正则表达式方法。<br>它通过指定的模式搜索字符串，并返回已找到的文本。<br>如果未找到匹配，则返回null。<br>下面的例子搜索字符串中的字符“e”：<br><strong>实例</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/e/.exec(&quot;The best things in life are free!&quot;);</span><br></pre></td></tr></table></figure>
-
-<p>由于字符串中有一个“e”，以上代码的输出将是：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">e</span><br></pre></td></tr></table></figure>
+<h1 id="HTML-DOM文档"><a href="#HTML-DOM文档" class="headerlink" title="HTML DOM文档"></a>HTML DOM文档</h1>
       
 
       
@@ -324,7 +243,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/01/JavaScript基础（下）/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/03/HTML-DOM/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -338,18 +257,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/01/PHP基础（上）/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          PHP基础（上）
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/01/JavaScript基础（上）/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JavaScript基础（上）</div>
+    <a href="/2019/09/01/PHP基础（上）/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PHP基础（上）</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -376,7 +286,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript日期"><span class="toc-number">1.</span> <span class="toc-text">JavaScript日期</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建Date对象"><span class="toc-number">1.1.</span> <span class="toc-text">创建Date对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new-Date"><span class="toc-number">1.2.</span> <span class="toc-text">new Date()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new-Date-year-month-…"><span class="toc-number">1.3.</span> <span class="toc-text">new Date(year,month,…)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#上个世纪"><span class="toc-number">1.4.</span> <span class="toc-text">上个世纪</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new-Date-dataString"><span class="toc-number">1.5.</span> <span class="toc-text">new Date(dataString)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript-Switch语句"><span class="toc-number">1.6.</span> <span class="toc-text">JavaScript Switch语句</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript-For循环"><span class="toc-number">2.</span> <span class="toc-text">JavaScript For循环</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript循环"><span class="toc-number">2.1.</span> <span class="toc-text">JavaScript循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#For-In-循环"><span class="toc-number">2.2.</span> <span class="toc-text">For/In 循环</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript-While循环"><span class="toc-number">3.</span> <span class="toc-text">JavaScript While循环</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript正则表达式"><span class="toc-number">4.</span> <span class="toc-text">JavaScript正则表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是正则表达式？"><span class="toc-number">4.1.</span> <span class="toc-text">什么是正则表达式？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用字符串方法"><span class="toc-number">4.2.</span> <span class="toc-text">使用字符串方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用字符串方法search-来处理字符串"><span class="toc-number">4.3.</span> <span class="toc-text">使用字符串方法search()来处理字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#正则表达式修饰符"><span class="toc-number">4.4.</span> <span class="toc-text">正则表达式修饰符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#正则表达式模式"><span class="toc-number">4.5.</span> <span class="toc-text">正则表达式模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用RegExp对象"><span class="toc-number">4.6.</span> <span class="toc-text">使用RegExp对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用test"><span class="toc-number">4.7.</span> <span class="toc-text">使用test()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用exec"><span class="toc-number">4.8.</span> <span class="toc-text">使用exec()</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DOM简介"><span class="toc-number">1.</span> <span class="toc-text">DOM简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-DOM（文档对象模型）"><span class="toc-number">1.1.</span> <span class="toc-text">HTML DOM（文档对象模型）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是DOM？"><span class="toc-number">1.2.</span> <span class="toc-text">什么是DOM？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是HTML-DOM？"><span class="toc-number">1.3.</span> <span class="toc-text">什么是HTML DOM？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML-DOM方法"><span class="toc-number">2.</span> <span class="toc-text">HTML DOM方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#实例"><span class="toc-number">2.1.</span> <span class="toc-text">实例</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML-DOM文档"><span class="toc-number">3.</span> <span class="toc-text">HTML DOM文档</span></a></li></ol>
                     </div>
                 </span>
             </div>
